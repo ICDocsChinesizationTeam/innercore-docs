@@ -1,0 +1,1962 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Block | Core Engine API</title>
+	<meta name="description" content="Documentation for Core Engine API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Core Engine API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="block.html">Block</a>
+				</li>
+			</ul>
+			<h1>Namespace Block</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>该模块适用于创建和修改方块.
+							术语 &quot;block&quot; 和 &quot;tile&quot; 存在存在着差异,这是由于他们的用法不同:
+							&quot;block&quot; 指的是存在于背包里的方块,而 &quot;tile&quot; 指的是放置世界上的方块,对部分原版方块来说两者的ID不同.
+						请使用 <a href="block.html#convertblocktoitemid">Block.convertBlockToItemId</a> 和 <a href="block.html#convertitemtoblockid">Block.convertItemToBlockId</a>来进行id转换.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/block.animatetickfunction.html" class="tsd-kind-icon">Animate<wbr>Tick<wbr>Function</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/block.blockvariation.html" class="tsd-kind-icon">Block<wbr>Variation</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/block.dropfunction.html" class="tsd-kind-icon">Drop<wbr>Function</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/block.entityinsidefunction.html" class="tsd-kind-icon">Entity<wbr>Inside<wbr>Function</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/block.neighbourchangefunction.html" class="tsd-kind-icon">Neighbour<wbr>Change<wbr>Function</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/block.placefunction.html" class="tsd-kind-icon">Place<wbr>Function</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/block.popresourcesfunction.html" class="tsd-kind-icon">Pop<wbr>Resources<wbr>Function</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/block.randomtickfunction.html" class="tsd-kind-icon">Random<wbr>Tick<wbr>Function</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/block.specialtype.html" class="tsd-kind-icon">Special<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="block.html#colorsource" class="tsd-kind-icon">Color<wbr>Source</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="block.html#sound" class="tsd-kind-icon">Sound</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#canbeextrablock" class="tsd-kind-icon">can<wbr>BeExtra<wbr>Block</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#cancontainliquid" class="tsd-kind-icon">can<wbr>Contain<wbr>Liquid</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#convertblocktoitemid" class="tsd-kind-icon">convert<wbr>Block<wbr>ToItem<wbr>Id</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#convertitemtoblockid" class="tsd-kind-icon">convert<wbr>Item<wbr>ToBlock<wbr>Id</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#createblock" class="tsd-kind-icon">create<wbr>Block</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#createblockwithrotation" class="tsd-kind-icon">create<wbr>Block<wbr>With<wbr>Rotation</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#createspecialtype" class="tsd-kind-icon">create<wbr>Special<wbr>Type</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getblockdropviaitem" class="tsd-kind-icon">get<wbr>Block<wbr>Drop<wbr>Via<wbr>Item</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getdestroytime" class="tsd-kind-icon">get<wbr>Destroy<wbr>Time</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getdropfunction" class="tsd-kind-icon">get<wbr>Drop<wbr>Function</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getexplosionresistance" class="tsd-kind-icon">get<wbr>Explosion<wbr>Resistance</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getfriction" class="tsd-kind-icon">get<wbr>Friction</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getlightlevel" class="tsd-kind-icon">get<wbr>Light<wbr>Level</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getlightopacity" class="tsd-kind-icon">get<wbr>Light<wbr>Opacity</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getmapcolor" class="tsd-kind-icon">get<wbr>Map<wbr>Color</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getnumericid" class="tsd-kind-icon">get<wbr>Numeric<wbr>Id</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getrenderlayer" class="tsd-kind-icon">get<wbr>Render<wbr>Layer</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#getrendertype" class="tsd-kind-icon">get<wbr>Render<wbr>Type</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#gettranslucency" class="tsd-kind-icon">get<wbr>Translucency</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#isnativetile" class="tsd-kind-icon">is<wbr>Native<wbr>Tile</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#issolid" class="tsd-kind-icon">is<wbr>Solid</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#registerdropfunction" class="tsd-kind-icon">register<wbr>Drop<wbr>Function</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#registerdropfunctionforid" class="tsd-kind-icon">register<wbr>Drop<wbr>Function<wbr>ForID</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#registerentityinsidefunctionforid" class="tsd-kind-icon">register<wbr>Entity<wbr>Inside<wbr>Function<wbr>ForID</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#registerneighbourchangefunction" class="tsd-kind-icon">register<wbr>Neighbour<wbr>Change<wbr>Function</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#registerneighbourchangefunctionforid" class="tsd-kind-icon">register<wbr>Neighbour<wbr>Change<wbr>Function<wbr>ForID</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#registerplacefunction" class="tsd-kind-icon">register<wbr>Place<wbr>Function</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#registerplacefunctionforid" class="tsd-kind-icon">register<wbr>Place<wbr>Function<wbr>ForID</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#registerpopresourcesfunction" class="tsd-kind-icon">register<wbr>Pop<wbr>Resources<wbr>Function</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#registerpopresourcesfunctionforid" class="tsd-kind-icon">register<wbr>Pop<wbr>Resources<wbr>Function<wbr>ForID</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setanimatetickcallback" class="tsd-kind-icon">set<wbr>Animate<wbr>Tick<wbr>Callback</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setblockmaterial" class="tsd-kind-icon">set<wbr>Block<wbr>Material</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setblockshape" class="tsd-kind-icon">set<wbr>Block<wbr>Shape</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setdestroylevel" class="tsd-kind-icon">set<wbr>Destroy<wbr>Level</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setdestroylevelforid" class="tsd-kind-icon">set<wbr>Destroy<wbr>Level<wbr>ForID</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setdestroytime" class="tsd-kind-icon">set<wbr>Destroy<wbr>Time</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setprototype" class="tsd-kind-icon">set<wbr>Prototype</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setrandomtickcallback" class="tsd-kind-icon">set<wbr>Random<wbr>Tick<wbr>Callback</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setredstonetile" class="tsd-kind-icon">set<wbr>Redstone<wbr>Tile</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setshape" class="tsd-kind-icon">set<wbr>Shape</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#settempdestroytime" class="tsd-kind-icon">set<wbr>Temp<wbr>Destroy<wbr>Time</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setupasnonredstonetile" class="tsd-kind-icon">setup<wbr>AsNon<wbr>Redstone<wbr>Tile</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setupasredstoneemitter" class="tsd-kind-icon">setup<wbr>AsRedstone<wbr>Emitter</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="block.html#setupasredstonereceiver" class="tsd-kind-icon">setup<wbr>AsRedstone<wbr>Receiver</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="colorsource" class="tsd-anchor"></a>
+					<h3>Color<wbr>Source</h3>
+					<div class="tsd-signature tsd-kind-icon">Color<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"grass"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"leaves"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"water"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L812">core-engine.d.ts:812</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="sound" class="tsd-anchor"></a>
+					<h3>Sound</h3>
+					<div class="tsd-signature tsd-kind-icon">Sound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"normal"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"gravel"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"wood"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"grass"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"metal"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"stone"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"cloth"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"glass"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"sand"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"snow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ladder"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"anvil"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"slime"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"silent"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"itemframe"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"turtle_egg"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"bamboo"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"bamboo_sapling"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"lantern"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"scaffolding"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"sweet_berry_bush"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"default"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L814">core-engine.d.ts:814</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="canbeextrablock" class="tsd-anchor"></a>
+					<h3>can<wbr>BeExtra<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">can<wbr>BeExtra<wbr>Block<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L810">core-engine.d.ts:810</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>whether the block of given id can be an extra block
+							(it&#39;s the block that can be set inside of another blocks, for ex. water and other liquids)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="cancontainliquid" class="tsd-anchor"></a>
+					<h3>can<wbr>Contain<wbr>Liquid</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">can<wbr>Contain<wbr>Liquid<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L804">core-engine.d.ts:804</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>whether the block of given id can contain liquid inside</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="convertblocktoitemid" class="tsd-anchor"></a>
+					<h3>convert<wbr>Block<wbr>ToItem<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Block<wbr>ToItem<wbr>Id<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L550">core-engine.d.ts:550</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts tile id to the block id</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>numeric tile id</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>数字方块ID corresponding to the given tile id</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="convertitemtoblockid" class="tsd-anchor"></a>
+					<h3>convert<wbr>Item<wbr>ToBlock<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Item<wbr>ToBlock<wbr>Id<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L557">core-engine.d.ts:557</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts block id to the tile id</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>numeric tile id</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>numeric tile id corresponding to the given block id</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="createblock" class="tsd-anchor"></a>
+					<h3>create<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Block<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defineData<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.blockvariation.html" class="tsd-signature-type">BlockVariation</a><span class="tsd-signature-symbol">[]</span>, blockType<span class="tsd-signature-symbol">?: </span><a href="../interfaces/block.specialtype.html" class="tsd-signature-type">SpecialType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L521">core-engine.d.ts:521</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>使用指定数据创建新方块</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>方块的字符串ID, 您应该先使用 <a href="idregistry.html#genblockid">IDRegistry.genBlockID</a> 注册.</p>
+									</div>
+								</li>
+								<li>
+									<h5>defineData: <a href="../interfaces/block.blockvariation.html" class="tsd-signature-type">BlockVariation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>方块所包含全部变种的数组,每个变种对应着方块的特殊值,按照数组顺序分配特殊值.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> blockType: <a href="../interfaces/block.specialtype.html" class="tsd-signature-type">SpecialType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><a href="../interfaces/block.specialtype.html">SpecialType</a> object, either java-object returned by
+											<a href="block.html#createspecialtype">Block.createSpecialType</a> or js-object with the required properties,
+											you can also pass special type name, if the type was previously
+										registered</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="createblockwithrotation" class="tsd-anchor"></a>
+					<h3>create<wbr>Block<wbr>With<wbr>Rotation</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Block<wbr>With<wbr>Rotation<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defineData<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.blockvariation.html" class="tsd-signature-type">BlockVariation</a><span class="tsd-signature-symbol">[]</span>, blockType<span class="tsd-signature-symbol">?: </span><a href="../interfaces/block.specialtype.html" class="tsd-signature-type">SpecialType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L537">core-engine.d.ts:537</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>使用指定数据创建新方块, creating four variations for
+										each of the specified variations to be able to place it facing flayer
+										with the front side and defines the appropriate behavior. Useful for
+									different machines and mechanisms</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>方块的字符串ID, 您应该先使用 <a href="idregistry.html#genblockid">IDRegistry.genBlockID</a> 注册.</p>
+									</div>
+								</li>
+								<li>
+									<h5>defineData: <a href="../interfaces/block.blockvariation.html" class="tsd-signature-type">BlockVariation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>array containing all variations of the block. Each
+											variation corresponds to four block data values, data values are assigned
+										according to variations order</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> blockType: <a href="../interfaces/block.specialtype.html" class="tsd-signature-type">SpecialType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><a href="../interfaces/block.specialtype.html">SpecialType</a> object, either java-object returned by
+											<a href="block.html#createspecialtype">Block.createSpecialType</a> or js-object with the required properties,
+											you can also pass special type name, if the type was previously
+										registered</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="createspecialtype" class="tsd-anchor"></a>
+					<h3>create<wbr>Special<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Special<wbr>Type<span class="tsd-signature-symbol">(</span>description<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.specialtype.html" class="tsd-signature-type">SpecialType</a>, nameKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L747">core-engine.d.ts:747</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new special type using specified params and registers it by
+									name</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>description: <a href="../interfaces/block.specialtype.html" class="tsd-signature-type">SpecialType</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>special type properties</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nameKey: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>string name to register the special type</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getblockdropviaitem" class="tsd-anchor"></a>
+					<h3>get<wbr>Block<wbr>Drop<wbr>Via<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Drop<wbr>Via<wbr>Item<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../interfaces/tile.html" class="tsd-signature-type">Tile</a>, item<span class="tsd-signature-symbol">: </span><a href="../interfaces/iteminstance.html" class="tsd-signature-type">ItemInstance</a>, coords<span class="tsd-signature-symbol">: </span><a href="../interfaces/vector.html" class="tsd-signature-type">Vector</a>, region<span class="tsd-signature-symbol">: </span><a href="../classes/blocksource.html" class="tsd-signature-type">BlockSource</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#iteminstancearray" class="tsd-signature-type">ItemInstanceArray</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L709">core-engine.d.ts:709</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets drop for the specified block. Used mostly by Core Engine&#39;s
+									<a href="toolapi.html">ToolAPI</a>, though, can be useful in the mods, too</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>block: <a href="../interfaces/tile.html" class="tsd-signature-type">Tile</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block info</p>
+									</div>
+								</li>
+								<li>
+									<h5>item: <a href="../interfaces/iteminstance.html" class="tsd-signature-type">ItemInstance</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>item that was (or is going to be) used to break the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>coords: <a href="../interfaces/vector.html" class="tsd-signature-type">Vector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>coordinates where the block was (or is going to be) broken</p>
+									</div>
+								</li>
+								<li>
+									<h5>region: <a href="../classes/blocksource.html" class="tsd-signature-type">BlockSource</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#iteminstancearray" class="tsd-signature-type">ItemInstanceArray</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>block drop, the array of arrays, each containing three values:
+							id, count and data respectively</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getdestroytime" class="tsd-anchor"></a>
+					<h3>get<wbr>Destroy<wbr>Time</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Destroy<wbr>Time<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L629">core-engine.d.ts:629</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>destroy time of the block, in ticks</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getdropfunction" class="tsd-anchor"></a>
+					<h3>get<wbr>Drop<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Drop<wbr>Function<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/block.dropfunction.html" class="tsd-signature-type">DropFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1062">core-engine.d.ts:1062</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/block.dropfunction.html" class="tsd-signature-type">DropFunction</a></h4>
+							<p>drop function of the block with given numeric id</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getexplosionresistance" class="tsd-anchor"></a>
+					<h3>get<wbr>Explosion<wbr>Resistance</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Explosion<wbr>Resistance<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L635">core-engine.d.ts:635</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>explosion resistance of the block</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getfriction" class="tsd-anchor"></a>
+					<h3>get<wbr>Friction</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Friction<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L641">core-engine.d.ts:641</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>friction of the block</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getlightlevel" class="tsd-anchor"></a>
+					<h3>get<wbr>Light<wbr>Level</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Light<wbr>Level<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L653">core-engine.d.ts:653</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>light level, emitted by block, from 0 to 15</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getlightopacity" class="tsd-anchor"></a>
+					<h3>get<wbr>Light<wbr>Opacity</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Light<wbr>Opacity<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L659">core-engine.d.ts:659</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>light opacity of the block, from 0 to 15</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getmapcolor" class="tsd-anchor"></a>
+					<h3>get<wbr>Map<wbr>Color</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Map<wbr>Color<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L759">core-engine.d.ts:759</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>the color specified block is displayed on the vanilla maps</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getnumericid" class="tsd-anchor"></a>
+					<h3>get<wbr>Numeric<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Numeric<wbr>Id<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L510">core-engine.d.ts:510</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>方块的字符串ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>通过方块的字符串ID来返回其对应的数字ID,如输入是数字ID,则返回其仍是数字ID.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getrenderlayer" class="tsd-anchor"></a>
+					<h3>get<wbr>Render<wbr>Layer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Render<wbr>Layer<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L665">core-engine.d.ts:665</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>render layer of the block</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getrendertype" class="tsd-anchor"></a>
+					<h3>get<wbr>Render<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Render<wbr>Type<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L671">core-engine.d.ts:671</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>render type of the block</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="gettranslucency" class="tsd-anchor"></a>
+					<h3>get<wbr>Translucency</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Translucency<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L647">core-engine.d.ts:647</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>translucency of the block</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="isnativetile" class="tsd-anchor"></a>
+					<h3>is<wbr>Native<wbr>Tile</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Native<wbr>Tile<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L543">core-engine.d.ts:543</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true, if the specified block id is a vanilla block</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="issolid" class="tsd-anchor"></a>
+					<h3>is<wbr>Solid</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Solid<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L623">core-engine.d.ts:623</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true, if block is solid, false otherwise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerdropfunction" class="tsd-anchor"></a>
+					<h3>register<wbr>Drop<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Drop<wbr>Function<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, dropFunc<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.dropfunction.html" class="tsd-signature-type">DropFunction</a>, level<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L578">core-engine.d.ts:578</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers function used by Core Engine to determine block drop for the
+									specified block id</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>dropFunc: <a href="../interfaces/block.dropfunction.html" class="tsd-signature-type">DropFunction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>function to be called to determine what will be dropped
+										when the block is broken</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> level: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if level is specified and is not 0, digging level of the
+										block is additionally set</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true, if specified string or numeric id exists and the function
+							was registered correctly, false otherwise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerdropfunctionforid" class="tsd-anchor"></a>
+					<h3>register<wbr>Drop<wbr>Function<wbr>ForID</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Drop<wbr>Function<wbr>ForID<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dropFunc<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.dropfunction.html" class="tsd-signature-type">DropFunction</a>, level<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L563">core-engine.d.ts:563</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Same as <a href="block.html#registerdropfunction">Block.registerDropFunction</a> but accepts only numeric
+									tile id as the first param</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>dropFunc: <a href="../interfaces/block.dropfunction.html" class="tsd-signature-type">DropFunction</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> level: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerentityinsidefunctionforid" class="tsd-anchor"></a>
+					<h3>register<wbr>Entity<wbr>Inside<wbr>Function<wbr>ForID</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Entity<wbr>Inside<wbr>Function<wbr>ForID<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, entityInsideFunc<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.entityinsidefunction.html" class="tsd-signature-type">EntityInsideFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L565">core-engine.d.ts:565</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>entityInsideFunc: <a href="../interfaces/block.entityinsidefunction.html" class="tsd-signature-type">EntityInsideFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerneighbourchangefunction" class="tsd-anchor"></a>
+					<h3>register<wbr>Neighbour<wbr>Change<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Neighbour<wbr>Change<wbr>Function<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, func<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.neighbourchangefunction.html" class="tsd-signature-type">NeighbourChangeFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L797">core-engine.d.ts:797</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>func: <a href="../interfaces/block.neighbourchangefunction.html" class="tsd-signature-type">NeighbourChangeFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerneighbourchangefunctionforid" class="tsd-anchor"></a>
+					<h3>register<wbr>Neighbour<wbr>Change<wbr>Function<wbr>ForID</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Neighbour<wbr>Change<wbr>Function<wbr>ForID<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, func<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.neighbourchangefunction.html" class="tsd-signature-type">NeighbourChangeFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L799">core-engine.d.ts:799</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>func: <a href="../interfaces/block.neighbourchangefunction.html" class="tsd-signature-type">NeighbourChangeFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerplacefunction" class="tsd-anchor"></a>
+					<h3>register<wbr>Place<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Place<wbr>Function<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, func<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.placefunction.html" class="tsd-signature-type">PlaceFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L722">core-engine.d.ts:722</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers function to be called when the block is placed in the world</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block numeric or string id</p>
+									</div>
+								</li>
+								<li>
+									<h5>func: <a href="../interfaces/block.placefunction.html" class="tsd-signature-type">PlaceFunction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>function to be called when the block is placed in the world</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerplacefunctionforid" class="tsd-anchor"></a>
+					<h3>register<wbr>Place<wbr>Function<wbr>ForID</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Place<wbr>Function<wbr>ForID<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, func<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.placefunction.html" class="tsd-signature-type">PlaceFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L715">core-engine.d.ts:715</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Same as <a href="block.html#registerplacefunction">Block.registerPlaceFunction</a> but accepts only numeric
+									tile id as the first param</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>block: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>func: <a href="../interfaces/block.placefunction.html" class="tsd-signature-type">PlaceFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerpopresourcesfunction" class="tsd-anchor"></a>
+					<h3>register<wbr>Pop<wbr>Resources<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Pop<wbr>Resources<wbr>Function<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, func<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.popresourcesfunction.html" class="tsd-signature-type">PopResourcesFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L595">core-engine.d.ts:595</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registered function used by Core Engine to determine block drop for the
+									specified block id</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>tile string or numeric id</p>
+									</div>
+								</li>
+								<li>
+									<h5>func: <a href="../interfaces/block.popresourcesfunction.html" class="tsd-signature-type">PopResourcesFunction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>function to be called when a block in the world is broken by
+										environment (explosions, pistons, etc.)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>true, if specified string or numeric id exists and the function
+							was registered correctly, false otherwise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerpopresourcesfunctionforid" class="tsd-anchor"></a>
+					<h3>register<wbr>Pop<wbr>Resources<wbr>Function<wbr>ForID</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Pop<wbr>Resources<wbr>Function<wbr>ForID<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, func<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.popresourcesfunction.html" class="tsd-signature-type">PopResourcesFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L584">core-engine.d.ts:584</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Same as <a href="block.html#registerpopresourcesfunction">Block.registerPopResourcesFunction</a> but accepts only numeric
+									tile id as the first param</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>func: <a href="../interfaces/block.popresourcesfunction.html" class="tsd-signature-type">PopResourcesFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setanimatetickcallback" class="tsd-anchor"></a>
+					<h3>set<wbr>Animate<wbr>Tick<wbr>Callback</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Animate<wbr>Tick<wbr>Callback<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, callback<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.animatetickfunction.html" class="tsd-signature-type">AnimateTickFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L775">core-engine.d.ts:775</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Makes block invoke callback randomly depending on game speed. Occurs more
+										often then <a href="block.html#setrandomtickcallback">Block.setRandomTickCallback</a> and only if the block is not
+									far away from player</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block id to register</p>
+									</div>
+								</li>
+								<li>
+									<h5>callback: <a href="../interfaces/block.animatetickfunction.html" class="tsd-signature-type">AnimateTickFunction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>function to be called</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setblockmaterial" class="tsd-anchor"></a>
+					<h3>set<wbr>Block<wbr>Material</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<wbr>Material<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, material<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, level<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L687">core-engine.d.ts:687</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers material and digging level for the specified block</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block numeric or string id</p>
+									</div>
+								</li>
+								<li>
+									<h5>material: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>material name</p>
+									</div>
+								</li>
+								<li>
+									<h5>level: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block&#39;s digging level</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setblockshape" class="tsd-anchor"></a>
+					<h3>set<wbr>Block<wbr>Shape</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<wbr>Shape<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pos1<span class="tsd-signature-symbol">: </span><a href="../interfaces/vector.html" class="tsd-signature-type">Vector</a>, pos2<span class="tsd-signature-symbol">: </span><a href="../interfaces/vector.html" class="tsd-signature-type">Vector</a>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L731">core-engine.d.ts:731</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets block box shape</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block numeric id</p>
+									</div>
+								</li>
+								<li>
+									<h5>pos1: <a href="../interfaces/vector.html" class="tsd-signature-type">Vector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block lower corner position, in voxels (1/16 of the block)</p>
+									</div>
+								</li>
+								<li>
+									<h5>pos2: <a href="../interfaces/vector.html" class="tsd-signature-type">Vector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block upper conner position, in voxels (1/16 of the block)</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block data</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setdestroylevel" class="tsd-anchor"></a>
+					<h3>set<wbr>Destroy<wbr>Level</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Destroy<wbr>Level<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, level<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resetData<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L610">core-engine.d.ts:610</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers a default destroy function for the specified block, considering
+									its digging level</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>tile string id</p>
+									</div>
+								</li>
+								<li>
+									<h5>level: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>digging level of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> resetData: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, the block is dropped with data equals to 0</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setdestroylevelforid" class="tsd-anchor"></a>
+					<h3>set<wbr>Destroy<wbr>Level<wbr>ForID</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Destroy<wbr>Level<wbr>ForID<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, level<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resetData<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L601">core-engine.d.ts:601</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Same as <a href="block.html#setdestroylevel">Block.setDestroyLevel</a> but accepts only numeric
+									tile id as the first param</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>level: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> resetData: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setdestroytime" class="tsd-anchor"></a>
+					<h3>set<wbr>Destroy<wbr>Time</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Destroy<wbr>Time<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L617">core-engine.d.ts:617</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets destroy time for the block with specified id</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>string or 数字方块ID</p>
+									</div>
+								</li>
+								<li>
+									<h5>time: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>destroy time for the block, in ticks</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setprototype" class="tsd-anchor"></a>
+					<h3>set<wbr>Prototype</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Prototype<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, Prototype<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L753">core-engine.d.ts:753</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>No longer supported</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>Prototype: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setrandomtickcallback" class="tsd-anchor"></a>
+					<h3>set<wbr>Random<wbr>Tick<wbr>Callback</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Random<wbr>Tick<wbr>Callback<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, callback<span class="tsd-signature-symbol">: </span><a href="../interfaces/block.randomtickfunction.html" class="tsd-signature-type">RandomTickFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L766">core-engine.d.ts:766</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Makes block invoke callback randomly depending on game speed</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block id to register for random ticks</p>
+									</div>
+								</li>
+								<li>
+									<h5>callback: <a href="../interfaces/block.randomtickfunction.html" class="tsd-signature-type">RandomTickFunction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>function to be called on random block tick</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setredstonetile" class="tsd-anchor"></a>
+					<h3>set<wbr>Redstone<wbr>Tile</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Redstone<wbr>Tile<span class="tsd-signature-symbol">(</span>nameID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isRedstone<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L698">core-engine.d.ts:698</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Makes block accept redstone signal</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>use <a href="block.html#setupasredstonereceiver">Block.setupAsRedstoneReceiver</a> and
+										<a href="block.html#setupasredstoneemitter">Block.setupAsRedstoneEmitter</a> instead</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nameID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block numeric or string id</p>
+									</div>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block data, currently not used</p>
+									</div>
+								</li>
+								<li>
+									<h5>isRedstone: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, the redstone changes at the block will notify
+										the &quot;RedstoneSignal&quot; callback</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setshape" class="tsd-anchor"></a>
+					<h3>set<wbr>Shape</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Shape<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, x2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L739">core-engine.d.ts:739</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Same as <a href="block.html#setblockshape">Block.setBlockShape</a>, but accepts coordinates as scalar
+									params, not objects</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block numeric id</p>
+									</div>
+								</li>
+								<li>
+									<h5>x1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>x2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block data</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="settempdestroytime" class="tsd-anchor"></a>
+					<h3>set<wbr>Temp<wbr>Destroy<wbr>Time</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Temp<wbr>Destroy<wbr>Time<span class="tsd-signature-symbol">(</span>numericID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L679">core-engine.d.ts:679</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Temporarily sets destroy time for block, saving the old value for the
+									further usage</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numericID: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>数字方块ID</p>
+									</div>
+								</li>
+								<li>
+									<h5>time: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>new destroy time in ticks</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setupasnonredstonetile" class="tsd-anchor"></a>
+					<h3>setup<wbr>AsNon<wbr>Redstone<wbr>Tile</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>AsNon<wbr>Redstone<wbr>Tile<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L795">core-engine.d.ts:795</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes all the redstone functionality from the block</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block numeric or string id</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setupasredstoneemitter" class="tsd-anchor"></a>
+					<h3>setup<wbr>AsRedstone<wbr>Emitter</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>AsRedstone<wbr>Emitter<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, connectToRedstone<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L789">core-engine.d.ts:789</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Makes block emit redstone signal</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block numeric or string id</p>
+									</div>
+								</li>
+								<li>
+									<h5>connectToRedstone: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, redstone wires will connect to the block</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setupasredstonereceiver" class="tsd-anchor"></a>
+					<h3>setup<wbr>AsRedstone<wbr>Receiver</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>AsRedstone<wbr>Receiver<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, connectToRedstone<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L782">core-engine.d.ts:782</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Makes block receive redstone signals via &quot;RedstoneSignal&quot; callback</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>block numeric or string id</p>
+									</div>
+								</li>
+								<li>
+									<h5>connectToRedstone: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, redstone wires will connect to the block</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label pp-nav pp-group">
+						<span>Guides</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/config.html">Mod <wbr>Configuration <wbr>Files</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/callbacks.html">Callbacks</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/abilities.html">Abilities</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/attributes.html">Attributes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/materials.html">Materials and <wbr>Shaders</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/biomes.html">Biomes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/dimensions.html">Dimensions</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Additional <wbr>Information</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/contributing.html">Contributing</a>
+					</li>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="block.html">Block</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/block.animatetickfunction.html" class="tsd-kind-icon">Animate<wbr>Tick<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/block.blockvariation.html" class="tsd-kind-icon">Block<wbr>Variation</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/block.dropfunction.html" class="tsd-kind-icon">Drop<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/block.entityinsidefunction.html" class="tsd-kind-icon">Entity<wbr>Inside<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/block.neighbourchangefunction.html" class="tsd-kind-icon">Neighbour<wbr>Change<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/block.placefunction.html" class="tsd-kind-icon">Place<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/block.popresourcesfunction.html" class="tsd-kind-icon">Pop<wbr>Resources<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/block.randomtickfunction.html" class="tsd-kind-icon">Random<wbr>Tick<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/block.specialtype.html" class="tsd-kind-icon">Special<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="block.html#colorsource" class="tsd-kind-icon">Color<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="block.html#sound" class="tsd-kind-icon">Sound</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#canbeextrablock" class="tsd-kind-icon">can<wbr>BeExtra<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#cancontainliquid" class="tsd-kind-icon">can<wbr>Contain<wbr>Liquid</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#convertblocktoitemid" class="tsd-kind-icon">convert<wbr>Block<wbr>ToItem<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#convertitemtoblockid" class="tsd-kind-icon">convert<wbr>Item<wbr>ToBlock<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#createblock" class="tsd-kind-icon">create<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#createblockwithrotation" class="tsd-kind-icon">create<wbr>Block<wbr>With<wbr>Rotation</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#createspecialtype" class="tsd-kind-icon">create<wbr>Special<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getblockdropviaitem" class="tsd-kind-icon">get<wbr>Block<wbr>Drop<wbr>Via<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getdestroytime" class="tsd-kind-icon">get<wbr>Destroy<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getdropfunction" class="tsd-kind-icon">get<wbr>Drop<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getexplosionresistance" class="tsd-kind-icon">get<wbr>Explosion<wbr>Resistance</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getfriction" class="tsd-kind-icon">get<wbr>Friction</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getlightlevel" class="tsd-kind-icon">get<wbr>Light<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getlightopacity" class="tsd-kind-icon">get<wbr>Light<wbr>Opacity</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getmapcolor" class="tsd-kind-icon">get<wbr>Map<wbr>Color</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getnumericid" class="tsd-kind-icon">get<wbr>Numeric<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getrenderlayer" class="tsd-kind-icon">get<wbr>Render<wbr>Layer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#getrendertype" class="tsd-kind-icon">get<wbr>Render<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#gettranslucency" class="tsd-kind-icon">get<wbr>Translucency</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#isnativetile" class="tsd-kind-icon">is<wbr>Native<wbr>Tile</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#issolid" class="tsd-kind-icon">is<wbr>Solid</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#registerdropfunction" class="tsd-kind-icon">register<wbr>Drop<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#registerdropfunctionforid" class="tsd-kind-icon">register<wbr>Drop<wbr>Function<wbr>ForID</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#registerentityinsidefunctionforid" class="tsd-kind-icon">register<wbr>Entity<wbr>Inside<wbr>Function<wbr>ForID</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#registerneighbourchangefunction" class="tsd-kind-icon">register<wbr>Neighbour<wbr>Change<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#registerneighbourchangefunctionforid" class="tsd-kind-icon">register<wbr>Neighbour<wbr>Change<wbr>Function<wbr>ForID</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#registerplacefunction" class="tsd-kind-icon">register<wbr>Place<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#registerplacefunctionforid" class="tsd-kind-icon">register<wbr>Place<wbr>Function<wbr>ForID</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#registerpopresourcesfunction" class="tsd-kind-icon">register<wbr>Pop<wbr>Resources<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#registerpopresourcesfunctionforid" class="tsd-kind-icon">register<wbr>Pop<wbr>Resources<wbr>Function<wbr>ForID</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setanimatetickcallback" class="tsd-kind-icon">set<wbr>Animate<wbr>Tick<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setblockmaterial" class="tsd-kind-icon">set<wbr>Block<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setblockshape" class="tsd-kind-icon">set<wbr>Block<wbr>Shape</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setdestroylevel" class="tsd-kind-icon">set<wbr>Destroy<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setdestroylevelforid" class="tsd-kind-icon">set<wbr>Destroy<wbr>Level<wbr>ForID</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setdestroytime" class="tsd-kind-icon">set<wbr>Destroy<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setprototype" class="tsd-kind-icon">set<wbr>Prototype</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setrandomtickcallback" class="tsd-kind-icon">set<wbr>Random<wbr>Tick<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setredstonetile" class="tsd-kind-icon">set<wbr>Redstone<wbr>Tile</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setshape" class="tsd-kind-icon">set<wbr>Shape</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#settempdestroytime" class="tsd-kind-icon">set<wbr>Temp<wbr>Destroy<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setupasnonredstonetile" class="tsd-kind-icon">setup<wbr>AsNon<wbr>Redstone<wbr>Tile</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setupasredstoneemitter" class="tsd-kind-icon">setup<wbr>AsRedstone<wbr>Emitter</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="block.html#setupasredstonereceiver" class="tsd-kind-icon">setup<wbr>AsRedstone<wbr>Receiver</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.json"><' + '/script>');</script>
+</body>
+</html>

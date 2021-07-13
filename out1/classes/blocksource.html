@@ -1,0 +1,1473 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BlockSource | Core Engine API</title>
+	<meta name="description" content="Documentation for Core Engine API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Core Engine API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="blocksource.html">BlockSource</a>
+				</li>
+			</ul>
+			<h1>Class BlockSource</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>New class to work with world instead of some methods from <a href="../modules/world.html">World</a> module.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">BlockSource</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#canseesky" class="tsd-kind-icon">can<wbr>See<wbr>Sky</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#destroyblock" class="tsd-kind-icon">destroy<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#explode" class="tsd-kind-icon">explode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#fetchentitiesinaabb" class="tsd-kind-icon">fetch<wbr>Entities<wbr>InAABB</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getbiome" class="tsd-kind-icon">get<wbr>Biome</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getbiomedownfallat" class="tsd-kind-icon">get<wbr>Biome<wbr>Downfall<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getbiometemperatureat" class="tsd-kind-icon">get<wbr>Biome<wbr>Temperature<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getblock" class="tsd-kind-icon">get<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getblockdata" class="tsd-kind-icon">get<wbr>Block<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getblockentity" class="tsd-kind-icon">get<wbr>Block<wbr>Entity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getblockid" class="tsd-kind-icon">get<wbr>Block<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getchunkstate" class="tsd-kind-icon">get<wbr>Chunk<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getchunkstateat" class="tsd-kind-icon">get<wbr>Chunk<wbr>State<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getdimension" class="tsd-kind-icon">get<wbr>Dimension</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getextrablock" class="tsd-kind-icon">get<wbr>Extra<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getgrasscolor" class="tsd-kind-icon">get<wbr>Grass<wbr>Color</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#getlightlevel" class="tsd-kind-icon">get<wbr>Light<wbr>Level</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#ischunkloaded" class="tsd-kind-icon">is<wbr>Chunk<wbr>Loaded</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#ischunkloadedat" class="tsd-kind-icon">is<wbr>Chunk<wbr>Loaded<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#listentitiesinaabb" class="tsd-kind-icon">list<wbr>Entities<wbr>InAABB</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#setbiome" class="tsd-kind-icon">set<wbr>Biome</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#setblock" class="tsd-kind-icon">set<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#setextrablock" class="tsd-kind-icon">set<wbr>Extra<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#spawndroppeditem" class="tsd-kind-icon">spawn<wbr>Dropped<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#spawnentity" class="tsd-kind-icon">spawn<wbr>Entity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blocksource.html#spawnexporbs" class="tsd-kind-icon">spawn<wbr>Exp<wbr>Orbs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="blocksource.html#getcurrentworldgenregion" class="tsd-kind-icon">get<wbr>Current<wbr>World<wbr>Gen<wbr>Region</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="blocksource.html#getdefaultforactor" class="tsd-kind-icon">get<wbr>Default<wbr>For<wbr>Actor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="blocksource.html#getdefaultfordimension" class="tsd-kind-icon">get<wbr>Default<wbr>For<wbr>Dimension</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="canseesky" class="tsd-anchor"></a>
+					<h3>can<wbr>See<wbr>Sky</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">can<wbr>See<wbr>Sky<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1460">core-engine.d.ts:1460</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>whether the sky can be seen from coords</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="destroyblock" class="tsd-anchor"></a>
+					<h3>destroy<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">destroy<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, drop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1390">core-engine.d.ts:1390</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Destroys block on coords producing appropriate drop
+										and particles. Do not use for massive tasks due to particles being
+									produced</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> drop: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>whether to provide drop for the block or not</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="explode" class="tsd-anchor"></a>
+					<h3>explode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">explode<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, power<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, fire<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1379">core-engine.d.ts:1379</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates an explosion on coords</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>power: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>defines how many blocks can the explosion destroy and what
+										blocks can or cannot be destroyed</p>
+									</div>
+								</li>
+								<li>
+									<h5>fire: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, puts the crater on fire</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fetchentitiesinaabb" class="tsd-anchor"></a>
+					<h3>fetch<wbr>Entities<wbr>InAABB</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fetch<wbr>Entities<wbr>InAABB<span class="tsd-signature-symbol">(</span>x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, x2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, blacklist<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1499">core-engine.d.ts:1499</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>x2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>blacklist: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>the list of entity IDs in given box,
+								that are equal to the given type, if blacklist value is false,
+							and all except the entities of the given type, if blacklist value is true</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getbiome" class="tsd-anchor"></a>
+					<h3>get<wbr>Biome</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Biome<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1406">core-engine.d.ts:1406</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the block</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>biome id</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getbiomedownfallat" class="tsd-anchor"></a>
+					<h3>get<wbr>Biome<wbr>Downfall<wbr>At</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Biome<wbr>Downfall<wbr>At<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1422">core-engine.d.ts:1422</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>downfall of the biome on coords</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getbiometemperatureat" class="tsd-anchor"></a>
+					<h3>get<wbr>Biome<wbr>Temperature<wbr>At</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Biome<wbr>Temperature<wbr>At<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1417">core-engine.d.ts:1417</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>temperature of the biome on coords</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getblock" class="tsd-anchor"></a>
+					<h3>get<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="blockstate.html" class="tsd-signature-type">BlockState</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1328">core-engine.d.ts:1328</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the block</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="blockstate.html" class="tsd-signature-type">BlockState</a></h4>
+							<p><a href="blockstate.html">BlockState</a> object of the block on given coords
+							or <a href="../interfaces/tile.html">Tile</a> object in Legacy pack</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getblockdata" class="tsd-anchor"></a>
+					<h3>get<wbr>Block<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Data<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1344">core-engine.d.ts:1344</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the block</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>block&#39;s data at coords</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getblockentity" class="tsd-anchor"></a>
+					<h3>get<wbr>Block<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Entity<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/nativetileentity.html" class="tsd-signature-type">NativeTileEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1399">core-engine.d.ts:1399</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the block</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/nativetileentity.html" class="tsd-signature-type">NativeTileEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>interface to the vanilla TileEntity (chest, furnace, etc.)
+							on the coords, and null if it&#39;s not found</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getblockid" class="tsd-anchor"></a>
+					<h3>get<wbr>Block<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Id<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1336">core-engine.d.ts:1336</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y coord of the block</p>
+									</div>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the block</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>block&#39;s id at coords</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getchunkstate" class="tsd-anchor"></a>
+					<h3>get<wbr>Chunk<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Chunk<wbr>State<span class="tsd-signature-symbol">(</span>chunkX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, chunkZ<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1443">core-engine.d.ts:1443</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>chunkX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the chunk</p>
+									</div>
+								</li>
+								<li>
+									<h5>chunkZ: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the chunk</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>the loading state of the chunk by chunk coords</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getchunkstateat" class="tsd-anchor"></a>
+					<h3>get<wbr>Chunk<wbr>State<wbr>At</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Chunk<wbr>State<wbr>At<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1450">core-engine.d.ts:1450</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the position</p>
+									</div>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the position</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>the loading state of the chunk by coords</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdimension" class="tsd-anchor"></a>
+					<h3>get<wbr>Dimension</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dimension<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1319">core-engine.d.ts:1319</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>the dimension id to which the following object belongs</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getextrablock" class="tsd-anchor"></a>
+					<h3>get<wbr>Extra<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Extra<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="blockstate.html" class="tsd-signature-type">BlockState</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1371">core-engine.d.ts:1371</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="blockstate.html" class="tsd-signature-type">BlockState</a></h4>
+							<p><a href="blockstate.html">BlockState</a> object of the extra block on given coords</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getgrasscolor" class="tsd-anchor"></a>
+					<h3>get<wbr>Grass<wbr>Color</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Grass<wbr>Color<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1465">core-engine.d.ts:1465</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>grass color on coords</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getlightlevel" class="tsd-anchor"></a>
+					<h3>get<wbr>Light<wbr>Level</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Light<wbr>Level<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1455">core-engine.d.ts:1455</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>light level on the specified coordinates, from 0 to 15</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ischunkloaded" class="tsd-anchor"></a>
+					<h3>is<wbr>Chunk<wbr>Loaded</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Chunk<wbr>Loaded<span class="tsd-signature-symbol">(</span>chunkX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, chunkZ<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1429">core-engine.d.ts:1429</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>chunkX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the chunk</p>
+									</div>
+								</li>
+								<li>
+									<h5>chunkZ: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the chunk</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if chunk is loaded, false otherwise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ischunkloadedat" class="tsd-anchor"></a>
+					<h3>is<wbr>Chunk<wbr>Loaded<wbr>At</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Chunk<wbr>Loaded<wbr>At<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1436">core-engine.d.ts:1436</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the position</p>
+									</div>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the position</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if chunk on the position is loaded, false otherwise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="listentitiesinaabb" class="tsd-anchor"></a>
+					<h3>list<wbr>Entities<wbr>InAABB</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">list<wbr>Entities<wbr>InAABB<span class="tsd-signature-symbol">(</span>x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, x2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, blacklist<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1506">core-engine.d.ts:1506</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>x2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>blacklist: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>the list of entity IDs in given box,
+								that are equal to the given type, if blacklist value is false,
+							and all except the entities of the given type, if blacklist value is true</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setbiome" class="tsd-anchor"></a>
+					<h3>set<wbr>Biome</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Biome<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, biomeID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1412">core-engine.d.ts:1412</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets biome id by coords</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>biomeID: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setblock" class="tsd-anchor"></a>
+					<h3>set<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, state<span class="tsd-signature-symbol">: </span><a href="blockstate.html" class="tsd-signature-type">BlockState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1351">core-engine.d.ts:1351</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets block on coords</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>id of the block to set</p>
+									</div>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>data of the block to set</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1356">core-engine.d.ts:1356</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets block by given <a href="blockstate.html">BlockState</a> on coords</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>state: <a href="blockstate.html" class="tsd-signature-type">BlockState</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setextrablock" class="tsd-anchor"></a>
+					<h3>set<wbr>Extra<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Extra<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Extra<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, state<span class="tsd-signature-symbol">: </span><a href="blockstate.html" class="tsd-signature-type">BlockState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1361">core-engine.d.ts:1361</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets extra block (for example, water inside another blocks), on given coords by given id and data</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1366">core-engine.d.ts:1366</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets extra block (for example, water inside another blocks), on given coords by given <a href="blockstate.html">BlockState</a></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>state: <a href="blockstate.html" class="tsd-signature-type">BlockState</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="spawndroppeditem" class="tsd-anchor"></a>
+					<h3>spawn<wbr>Dropped<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">spawn<wbr>Dropped<wbr>Item<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, extra<span class="tsd-signature-symbol">?: </span><a href="itemextradata.html" class="tsd-signature-type">ItemExtraData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1478">core-engine.d.ts:1478</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates dropped item and returns entity id</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X coord of the place where item will be dropped</p>
+									</div>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y coord of the place where item will be dropped</p>
+									</div>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Z coord of the place where item will be dropped</p>
+									</div>
+								</li>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>id of the item to drop</p>
+									</div>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>count of the item to drop</p>
+									</div>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>data of the item to drop</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> extra: <a href="itemextradata.html" class="tsd-signature-type">ItemExtraData</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>extra of the item to drop</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>drop entity id</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="spawnentity" class="tsd-anchor"></a>
+					<h3>spawn<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">spawn<wbr>Entity<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">spawn<wbr>Entity<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, namespace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, init_data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1483">core-engine.d.ts:1483</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Spawns entity of given numeric type on coords</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1485">core-engine.d.ts:1485</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>namespace: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>init_data: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="spawnexporbs" class="tsd-anchor"></a>
+					<h3>spawn<wbr>Exp<wbr>Orbs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">spawn<wbr>Exp<wbr>Orbs<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1492">core-engine.d.ts:1492</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Spawns experience orbs on coords</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>amount: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>experience amount</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getcurrentworldgenregion" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Current<wbr>World<wbr>Gen<wbr>Region</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>World<wbr>Gen<wbr>Region<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="blocksource.html" class="tsd-signature-type">BlockSource</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1526">core-engine.d.ts:1526</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="blocksource.html" class="tsd-signature-type">BlockSource</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>BlockSource foe world generation</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getdefaultforactor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Default<wbr>For<wbr>Actor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>For<wbr>Actor<span class="tsd-signature-symbol">(</span>entityUid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="blocksource.html" class="tsd-signature-type">BlockSource</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1521">core-engine.d.ts:1521</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entityUid: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="blocksource.html" class="tsd-signature-type">BlockSource</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>interface to the dimension where the given entity is
+								(null if given entity does not exist or the dimension is not loaded
+							and interface was not created)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getdefaultfordimension" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Default<wbr>For<wbr>Dimension</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>For<wbr>Dimension<span class="tsd-signature-symbol">(</span>dimension<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="blocksource.html" class="tsd-signature-type">BlockSource</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L1514">core-engine.d.ts:1514</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dimension: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="blocksource.html" class="tsd-signature-type">BlockSource</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>interface to given dimension by default
+								(null if given dimension is not loaded and this interface
+							was not created yet)</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label pp-nav pp-group">
+						<span>Guides</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/config.html">Mod <wbr>Configuration <wbr>Files</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/callbacks.html">Callbacks</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/abilities.html">Abilities</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/attributes.html">Attributes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/materials.html">Materials and <wbr>Shaders</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/biomes.html">Biomes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/dimensions.html">Dimensions</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Additional <wbr>Information</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/contributing.html">Contributing</a>
+					</li>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="blocksource.html" class="tsd-kind-icon">Block<wbr>Source</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#canseesky" class="tsd-kind-icon">can<wbr>See<wbr>Sky</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#destroyblock" class="tsd-kind-icon">destroy<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#explode" class="tsd-kind-icon">explode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#fetchentitiesinaabb" class="tsd-kind-icon">fetch<wbr>Entities<wbr>InAABB</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getbiome" class="tsd-kind-icon">get<wbr>Biome</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getbiomedownfallat" class="tsd-kind-icon">get<wbr>Biome<wbr>Downfall<wbr>At</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getbiometemperatureat" class="tsd-kind-icon">get<wbr>Biome<wbr>Temperature<wbr>At</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getblock" class="tsd-kind-icon">get<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getblockdata" class="tsd-kind-icon">get<wbr>Block<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getblockentity" class="tsd-kind-icon">get<wbr>Block<wbr>Entity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getblockid" class="tsd-kind-icon">get<wbr>Block<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getchunkstate" class="tsd-kind-icon">get<wbr>Chunk<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getchunkstateat" class="tsd-kind-icon">get<wbr>Chunk<wbr>State<wbr>At</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getdimension" class="tsd-kind-icon">get<wbr>Dimension</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getextrablock" class="tsd-kind-icon">get<wbr>Extra<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getgrasscolor" class="tsd-kind-icon">get<wbr>Grass<wbr>Color</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#getlightlevel" class="tsd-kind-icon">get<wbr>Light<wbr>Level</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#ischunkloaded" class="tsd-kind-icon">is<wbr>Chunk<wbr>Loaded</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#ischunkloadedat" class="tsd-kind-icon">is<wbr>Chunk<wbr>Loaded<wbr>At</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#listentitiesinaabb" class="tsd-kind-icon">list<wbr>Entities<wbr>InAABB</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#setbiome" class="tsd-kind-icon">set<wbr>Biome</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#setblock" class="tsd-kind-icon">set<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#setextrablock" class="tsd-kind-icon">set<wbr>Extra<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#spawndroppeditem" class="tsd-kind-icon">spawn<wbr>Dropped<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#spawnentity" class="tsd-kind-icon">spawn<wbr>Entity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blocksource.html#spawnexporbs" class="tsd-kind-icon">spawn<wbr>Exp<wbr>Orbs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="blocksource.html#getcurrentworldgenregion" class="tsd-kind-icon">get<wbr>Current<wbr>World<wbr>Gen<wbr>Region</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="blocksource.html#getdefaultforactor" class="tsd-kind-icon">get<wbr>Default<wbr>For<wbr>Actor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="blocksource.html#getdefaultfordimension" class="tsd-kind-icon">get<wbr>Default<wbr>For<wbr>Dimension</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.json"><' + '/script>');</script>
+</body>
+</html>

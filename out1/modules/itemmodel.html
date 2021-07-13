@@ -1,0 +1,1926 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ItemModel | Core Engine API</title>
+	<meta name="description" content="Documentation for Core Engine API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Core Engine API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="itemmodel.html">ItemModel</a>
+				</li>
+			</ul>
+			<h1>Namespace ItemModel</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Namespace used to change item models in player&#39;s hand and/or inventory.
+						By default, if the block has an <a href="icrender.html">ICRender</a>, it is automatically applied as item&#39;s model</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/itemmodel.iconrebuildlistener.html" class="tsd-kind-icon">Icon<wbr>Rebuild<wbr>Listener</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/itemmodel.modeloverridefunction.html" class="tsd-kind-icon">Model<wbr>Override<wbr>Function</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="itemmodel.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="itemmodel.html#id" class="tsd-kind-icon">id</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#getallmodels" class="tsd-kind-icon">get<wbr>All<wbr>Models</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#getemptymeshfrompool" class="tsd-kind-icon">get<wbr>Empty<wbr>Mesh<wbr>From<wbr>Pool</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#getfor" class="tsd-kind-icon">get<wbr>For</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#getforwithfallback" class="tsd-kind-icon">get<wbr>For<wbr>With<wbr>Fallback</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#getitemmeshtexturefor" class="tsd-kind-icon">get<wbr>Item<wbr>Mesh<wbr>Texture<wbr>For</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#getitemrendermeshfor" class="tsd-kind-icon">get<wbr>Item<wbr>Render<wbr>Mesh<wbr>For</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#newstandalone" class="tsd-kind-icon">new<wbr>Standalone</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#releasemesh" class="tsd-kind-icon">release<wbr>Mesh</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#setcurrentcachegroup" class="tsd-kind-icon">set<wbr>Current<wbr>Cache<wbr>Group</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="itemmodel.html#tryreleasemodelbitmapsonlowmemory" class="tsd-kind-icon">try<wbr>Release<wbr>Model<wbr>Bitmaps<wbr>OnLow<wbr>Memory</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#addtomesh" class="tsd-kind-icon">add<wbr>ToMesh</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getcachekey" class="tsd-kind-icon">get<wbr>Cache<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#geticonbitmap" class="tsd-kind-icon">get<wbr>Icon<wbr>Bitmap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#geticonbitmapnoreload" class="tsd-kind-icon">get<wbr>Icon<wbr>Bitmap<wbr>NoReload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getitemrendermesh" class="tsd-kind-icon">get<wbr>Item<wbr>Render<wbr>Mesh</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getmeshtexturename" class="tsd-kind-icon">get<wbr>Mesh<wbr>Texture<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getmodelforiteminstance" class="tsd-kind-icon">get<wbr>Model<wbr>For<wbr>Item<wbr>Instance</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getshaderuniforms" class="tsd-kind-icon">get<wbr>Shader<wbr>Uniforms</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getspritemesh" class="tsd-kind-icon">get<wbr>Sprite<wbr>Mesh</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getuiglintmaterialname" class="tsd-kind-icon">get<wbr>UiGlint<wbr>Material<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getuimaterialname" class="tsd-kind-icon">get<wbr>UiMaterial<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getuitexturename" class="tsd-kind-icon">get<wbr>UiTexture<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getworldglintmaterialname" class="tsd-kind-icon">get<wbr>World<wbr>Glint<wbr>Material<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getworldmaterialname" class="tsd-kind-icon">get<wbr>World<wbr>Material<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#getworldtexturename" class="tsd-kind-icon">get<wbr>World<wbr>Texture<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#isemptyinui" class="tsd-kind-icon">is<wbr>Empty<wbr>InUi</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#isemptyinworld" class="tsd-kind-icon">is<wbr>Empty<wbr>InWorld</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#isnonexistant" class="tsd-kind-icon">is<wbr>Non<wbr>Existant</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#isspriteinui" class="tsd-kind-icon">is<wbr>Sprite<wbr>InUi</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#isspriteinworld" class="tsd-kind-icon">is<wbr>Sprite<wbr>InWorld</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#isusingoverridecallback" class="tsd-kind-icon">is<wbr>Using<wbr>Override<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#newtexture" class="tsd-kind-icon">new<wbr>Texture</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#occupy" class="tsd-kind-icon">occupy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#overrideshand" class="tsd-kind-icon">overrides<wbr>Hand</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#overridesui" class="tsd-kind-icon">overrides<wbr>Ui</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#queuereload" class="tsd-kind-icon">queue<wbr>Reload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#releaseicon" class="tsd-kind-icon">release<wbr>Icon</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#reloadicon" class="tsd-kind-icon">reload<wbr>Icon</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#reloadiconifdirty" class="tsd-kind-icon">reload<wbr>Icon<wbr>IfDirty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#removemoduispritetexture" class="tsd-kind-icon">remove<wbr>Mod<wbr>UiSprite<wbr>Texture</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setcachekey" class="tsd-kind-icon">set<wbr>Cache<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setglintmaterial" class="tsd-kind-icon">set<wbr>Glint<wbr>Material</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#sethandglintmaterial" class="tsd-kind-icon">set<wbr>Hand<wbr>Glint<wbr>Material</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#sethandmaterial" class="tsd-kind-icon">set<wbr>Hand<wbr>Material</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#sethandmodel" class="tsd-kind-icon">set<wbr>Hand<wbr>Model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#sethandtexture" class="tsd-kind-icon">set<wbr>Hand<wbr>Texture</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setitemtexture" class="tsd-kind-icon">set<wbr>Item<wbr>Texture</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setitemtexturepath" class="tsd-kind-icon">set<wbr>Item<wbr>Texture<wbr>Path</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setmaterial" class="tsd-kind-icon">set<wbr>Material</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setmoduispritebitmap" class="tsd-kind-icon">set<wbr>Mod<wbr>UiSprite<wbr>Bitmap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setmoduispritename" class="tsd-kind-icon">set<wbr>Mod<wbr>UiSprite<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setmoduispritepath" class="tsd-kind-icon">set<wbr>Mod<wbr>UiSprite<wbr>Path</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setmodel" class="tsd-kind-icon">set<wbr>Model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setmodeloverridecallback" class="tsd-kind-icon">set<wbr>Model<wbr>Override<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setspriteuirender" class="tsd-kind-icon">set<wbr>Sprite<wbr>UiRender</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#settexture" class="tsd-kind-icon">set<wbr>Texture</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setuiglintmaterial" class="tsd-kind-icon">set<wbr>UiGlint<wbr>Material</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setuimaterial" class="tsd-kind-icon">set<wbr>UiMaterial</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setuimodel" class="tsd-kind-icon">set<wbr>UiModel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="itemmodel.html#setuitexture" class="tsd-kind-icon">set<wbr>UiTexture</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+					<a name="data" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6915">core-engine.d.ts:6915</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Item or block data current <a href="itemmodel.html">ItemModel</a> relates to</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+					<a name="id" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6910">core-engine.d.ts:6910</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Item or block id current <a href="itemmodel.html">ItemModel</a> relates to</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getallmodels" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>Models</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Models<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6858">core-engine.d.ts:6858</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>a collection of all existing item models</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getemptymeshfrompool" class="tsd-anchor"></a>
+					<h3>get<wbr>Empty<wbr>Mesh<wbr>From<wbr>Pool</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Empty<wbr>Mesh<wbr>From<wbr>Pool<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6878">core-engine.d.ts:6878</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></h4>
+							<p>empty <a href="../classes/rendermesh.html">RenderMesh</a> from the pool or creates an empty one. Used
+							to reduce constructors/destructors calls</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getfor" class="tsd-anchor"></a>
+					<h3>get<wbr>For</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>For<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6839">core-engine.d.ts:6839</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets <a href="itemmodel.html">ItemModel</a> object for the specified id and data</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>item or block id</p>
+									</div>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>item or block data</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+							<p><a href="itemmodel.html">ItemModel</a> object used to manipulate item&#39;s model</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getforwithfallback" class="tsd-anchor"></a>
+					<h3>get<wbr>For<wbr>With<wbr>Fallback</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>For<wbr>With<wbr>Fallback<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6848">core-engine.d.ts:6848</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets <a href="itemmodel.html">ItemModel</a> object for the specified id and data. If no <a href="itemmodel.html">ItemModel</a> for
+									specified data exist, uses default data (0)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+							<p><a href="itemmodel.html">ItemModel</a> object used to manipulate item&#39;s model</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getitemmeshtexturefor" class="tsd-anchor"></a>
+					<h3>get<wbr>Item<wbr>Mesh<wbr>Texture<wbr>For</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Item<wbr>Mesh<wbr>Texture<wbr>For<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6897">core-engine.d.ts:6897</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>item or block numeric id</p>
+									</div>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>item or block data</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>texture name for the specified item or block</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getitemrendermeshfor" class="tsd-anchor"></a>
+					<h3>get<wbr>Item<wbr>Render<wbr>Mesh<wbr>For</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Item<wbr>Render<wbr>Mesh<wbr>For<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, randomize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6890">core-engine.d.ts:6890</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>randomize: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, item mesh position is randomized</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></h4>
+							<p><a href="../classes/rendermesh.html">RenderMesh</a> generated for specified item</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="newstandalone" class="tsd-anchor"></a>
+					<h3>new<wbr>Standalone</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">new<wbr>Standalone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6853">core-engine.d.ts:6853</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new standalone item model that is not connected with any item or block</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="releasemesh" class="tsd-anchor"></a>
+					<h3>release<wbr>Mesh</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">release<wbr>Mesh<span class="tsd-signature-symbol">(</span>mesh<span class="tsd-signature-symbol">: </span><a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6884">core-engine.d.ts:6884</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Releases <a href="../classes/rendermesh.html">RenderMesh</a> and returns it to the pool. Used to reduce
+									constructors/destructors calls</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mesh: <a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="setcurrentcachegroup" class="tsd-anchor"></a>
+					<h3>set<wbr>Current<wbr>Cache<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Current<wbr>Cache<wbr>Group<span class="tsd-signature-symbol">(</span>mod<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6841">core-engine.d.ts:6841</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mod: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>version: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="tryreleasemodelbitmapsonlowmemory" class="tsd-anchor"></a>
+					<h3>try<wbr>Release<wbr>Model<wbr>Bitmaps<wbr>OnLow<wbr>Memory</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Release<wbr>Model<wbr>Bitmaps<wbr>OnLow<wbr>Memory<span class="tsd-signature-symbol">(</span>bytes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6864">core-engine.d.ts:6864</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Releases some of the bitmaps to free up memory</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bytes: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>bytes count to be released</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="addtomesh" class="tsd-anchor"></a>
+					<h3>add<wbr>ToMesh</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>ToMesh<span class="tsd-signature-symbol">(</span>mesh<span class="tsd-signature-symbol">: </span><a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a>, x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7032">core-engine.d.ts:7032</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mesh: <a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></h5>
+								</li>
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getcachekey" class="tsd-anchor"></a>
+					<h3>get<wbr>Cache<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cache<wbr>Key<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7068">core-engine.d.ts:7068</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="geticonbitmap" class="tsd-anchor"></a>
+					<h3>get<wbr>Icon<wbr>Bitmap</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Icon<wbr>Bitmap<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bitmap</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7058">core-engine.d.ts:7058</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bitmap</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="geticonbitmapnoreload" class="tsd-anchor"></a>
+					<h3>get<wbr>Icon<wbr>Bitmap<wbr>NoReload</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Icon<wbr>Bitmap<wbr>NoReload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bitmap</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7060">core-engine.d.ts:7060</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bitmap</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getitemrendermesh" class="tsd-anchor"></a>
+					<h3>get<wbr>Item<wbr>Render<wbr>Mesh</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Item<wbr>Render<wbr>Mesh<span class="tsd-signature-symbol">(</span>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, randomize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7072">core-engine.d.ts:7072</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>randomize: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getmeshtexturename" class="tsd-anchor"></a>
+					<h3>get<wbr>Mesh<wbr>Texture<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Mesh<wbr>Texture<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7034">core-engine.d.ts:7034</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getmodelforiteminstance" class="tsd-anchor"></a>
+					<h3>get<wbr>Model<wbr>For<wbr>Item<wbr>Instance</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Model<wbr>For<wbr>Item<wbr>Instance<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, extra<span class="tsd-signature-symbol">: </span><a href="../classes/itemextradata.html" class="tsd-signature-type">ItemExtraData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7048">core-engine.d.ts:7048</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>extra: <a href="../classes/itemextradata.html" class="tsd-signature-type">ItemExtraData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getshaderuniforms" class="tsd-anchor"></a>
+					<h3>get<wbr>Shader<wbr>Uniforms</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Shader<wbr>Uniforms<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/render.shaderuniformset.html" class="tsd-signature-type">ShaderUniformSet</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6944">core-engine.d.ts:6944</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/render.shaderuniformset.html" class="tsd-signature-type">ShaderUniformSet</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getspritemesh" class="tsd-anchor"></a>
+					<h3>get<wbr>Sprite<wbr>Mesh</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sprite<wbr>Mesh<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7030">core-engine.d.ts:7030</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getuiglintmaterialname" class="tsd-anchor"></a>
+					<h3>get<wbr>UiGlint<wbr>Material<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>UiGlint<wbr>Material<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7024">core-engine.d.ts:7024</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getuimaterialname" class="tsd-anchor"></a>
+					<h3>get<wbr>UiMaterial<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>UiMaterial<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7020">core-engine.d.ts:7020</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getuitexturename" class="tsd-anchor"></a>
+					<h3>get<wbr>UiTexture<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>UiTexture<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7016">core-engine.d.ts:7016</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getworldglintmaterialname" class="tsd-anchor"></a>
+					<h3>get<wbr>World<wbr>Glint<wbr>Material<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>World<wbr>Glint<wbr>Material<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7026">core-engine.d.ts:7026</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getworldmaterialname" class="tsd-anchor"></a>
+					<h3>get<wbr>World<wbr>Material<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>World<wbr>Material<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7022">core-engine.d.ts:7022</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="getworldtexturename" class="tsd-anchor"></a>
+					<h3>get<wbr>World<wbr>Texture<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>World<wbr>Texture<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7018">core-engine.d.ts:7018</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="isempty" class="tsd-anchor"></a>
+					<h3>is<wbr>Empty</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6930">core-engine.d.ts:6930</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true, if the model is empty</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="isemptyinui" class="tsd-anchor"></a>
+					<h3>is<wbr>Empty<wbr>InUi</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<wbr>InUi<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6921">core-engine.d.ts:6921</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="isemptyinworld" class="tsd-anchor"></a>
+					<h3>is<wbr>Empty<wbr>InWorld</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<wbr>InWorld<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6925">core-engine.d.ts:6925</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="isnonexistant" class="tsd-anchor"></a>
+					<h3>is<wbr>Non<wbr>Existant</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Non<wbr>Existant<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6932">core-engine.d.ts:6932</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="isspriteinui" class="tsd-anchor"></a>
+					<h3>is<wbr>Sprite<wbr>InUi</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Sprite<wbr>InUi<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6919">core-engine.d.ts:6919</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="isspriteinworld" class="tsd-anchor"></a>
+					<h3>is<wbr>Sprite<wbr>InWorld</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Sprite<wbr>InWorld<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6923">core-engine.d.ts:6923</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="isusingoverridecallback" class="tsd-anchor"></a>
+					<h3>is<wbr>Using<wbr>Override<wbr>Callback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Using<wbr>Override<wbr>Callback<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7052">core-engine.d.ts:7052</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="newtexture" class="tsd-anchor"></a>
+					<h3>new<wbr>Texture</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">new<wbr>Texture<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bitmap</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7028">core-engine.d.ts:7028</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bitmap</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="occupy" class="tsd-anchor"></a>
+					<h3>occupy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">occupy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6917">core-engine.d.ts:6917</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="overrideshand" class="tsd-anchor"></a>
+					<h3>overrides<wbr>Hand</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">overrides<wbr>Hand<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6937">core-engine.d.ts:6937</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true, if this item model overrides the default model in player&#39;s hand</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="overridesui" class="tsd-anchor"></a>
+					<h3>overrides<wbr>Ui</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">overrides<wbr>Ui<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6942">core-engine.d.ts:6942</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true, if this item model overrides the default model in player&#39;s inventory</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="queuereload" class="tsd-anchor"></a>
+					<h3>queue<wbr>Reload</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">queue<wbr>Reload<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">?: </span><a href="../interfaces/itemmodel.iconrebuildlistener.html" class="tsd-signature-type">IconRebuildListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bitmap</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7064">core-engine.d.ts:7064</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> listener: <a href="../interfaces/itemmodel.iconrebuildlistener.html" class="tsd-signature-type">IconRebuildListener</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bitmap</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="releaseicon" class="tsd-anchor"></a>
+					<h3>release<wbr>Icon</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">release<wbr>Icon<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7054">core-engine.d.ts:7054</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="reloadicon" class="tsd-anchor"></a>
+					<h3>reload<wbr>Icon</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">reload<wbr>Icon<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7062">core-engine.d.ts:7062</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="reloadiconifdirty" class="tsd-anchor"></a>
+					<h3>reload<wbr>Icon<wbr>IfDirty</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">reload<wbr>Icon<wbr>IfDirty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7056">core-engine.d.ts:7056</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="removemoduispritetexture" class="tsd-anchor"></a>
+					<h3>remove<wbr>Mod<wbr>UiSprite<wbr>Texture</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Mod<wbr>UiSprite<wbr>Texture<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7040">core-engine.d.ts:7040</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setcachekey" class="tsd-anchor"></a>
+					<h3>set<wbr>Cache<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Cache<wbr>Key<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7066">core-engine.d.ts:7066</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setglintmaterial" class="tsd-anchor"></a>
+					<h3>set<wbr>Glint<wbr>Material</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Glint<wbr>Material<span class="tsd-signature-symbol">(</span>material<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7010">core-engine.d.ts:7010</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>material: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="sethandglintmaterial" class="tsd-anchor"></a>
+					<h3>set<wbr>Hand<wbr>Glint<wbr>Material</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Hand<wbr>Glint<wbr>Material<span class="tsd-signature-symbol">(</span>material<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7012">core-engine.d.ts:7012</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>material: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="sethandmaterial" class="tsd-anchor"></a>
+					<h3>set<wbr>Hand<wbr>Material</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Hand<wbr>Material<span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7002">core-engine.d.ts:7002</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets item model&#39;s material only in player&#39;s hand</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>texture: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>material name to be used for the model</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="sethandmodel" class="tsd-anchor"></a>
+					<h3>set<wbr>Hand<wbr>Model</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Hand<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a><span class="tsd-signature-symbol"> | </span><a href="../classes/icrender.model.html" class="tsd-signature-type">Model</a><span class="tsd-signature-symbol"> | </span><a href="../classes/blockrenderer.model.html" class="tsd-signature-type">Model</a>, texture<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, material<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6963">core-engine.d.ts:6963</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets item&#39;s model to display only in player&#39;s hand</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a><span class="tsd-signature-symbol"> | </span><a href="../classes/icrender.model.html" class="tsd-signature-type">Model</a><span class="tsd-signature-symbol"> | </span><a href="../classes/blockrenderer.model.html" class="tsd-signature-type">Model</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><a href="../classes/rendermesh.html">RenderMesh</a>, <a href="../classes/icrender.model.html">ICRender.Model</a> or <a href="../classes/blockrenderer.model.html">BlockRenderer.Model</a> to be used as item model</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> texture: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>texture name to be used for the model (use &quot;atlas::terrain&quot; for block textures)</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> material: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>material name to be used for the model</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="sethandtexture" class="tsd-anchor"></a>
+					<h3>set<wbr>Hand<wbr>Texture</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Hand<wbr>Texture<span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6983">core-engine.d.ts:6983</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets item model&#39;s texture only in player&#39;s hand</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>texture: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>texture name to be used for the model (use &quot;atlas::terrain&quot; for block textures)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setitemtexture" class="tsd-anchor"></a>
+					<h3>set<wbr>Item<wbr>Texture</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Item<wbr>Texture<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7038">core-engine.d.ts:7038</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setitemtexturepath" class="tsd-anchor"></a>
+					<h3>set<wbr>Item<wbr>Texture<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Item<wbr>Texture<wbr>Path<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7036">core-engine.d.ts:7036</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setmaterial" class="tsd-anchor"></a>
+					<h3>set<wbr>Material</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Material<span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6996">core-engine.d.ts:6996</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets item model&#39;s material in both player&#39;s inventory and in hand</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>texture: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>material name to be used for the model. See
+										<a href="../pages/materials.html">Materials and Shaders</a> for more information</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setmoduispritebitmap" class="tsd-anchor"></a>
+					<h3>set<wbr>Mod<wbr>UiSprite<wbr>Bitmap</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Mod<wbr>UiSprite<wbr>Bitmap<span class="tsd-signature-symbol">(</span>bitmap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bitmap</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7046">core-engine.d.ts:7046</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bitmap: <span class="tsd-signature-type">Bitmap</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setmoduispritename" class="tsd-anchor"></a>
+					<h3>set<wbr>Mod<wbr>UiSprite<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Mod<wbr>UiSprite<wbr>Name<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7044">core-engine.d.ts:7044</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setmoduispritepath" class="tsd-anchor"></a>
+					<h3>set<wbr>Mod<wbr>UiSprite<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Mod<wbr>UiSprite<wbr>Path<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7042">core-engine.d.ts:7042</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setmodel" class="tsd-anchor"></a>
+					<h3>set<wbr>Model</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a><span class="tsd-signature-symbol"> | </span><a href="../classes/icrender.model.html" class="tsd-signature-type">Model</a><span class="tsd-signature-symbol"> | </span><a href="../classes/blockrenderer.model.html" class="tsd-signature-type">Model</a>, texture<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, material<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6955">core-engine.d.ts:6955</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets item&#39;s model to display both in the inventory and in hand</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a><span class="tsd-signature-symbol"> | </span><a href="../classes/icrender.model.html" class="tsd-signature-type">Model</a><span class="tsd-signature-symbol"> | </span><a href="../classes/blockrenderer.model.html" class="tsd-signature-type">Model</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><a href="../classes/rendermesh.html">RenderMesh</a>, <a href="../classes/icrender.model.html">ICRender.Model</a> or <a href="../classes/blockrenderer.model.html">BlockRenderer.Model</a> to be used as item model</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> texture: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>texture name to be used for the model (use &quot;atlas::terrain&quot; for block textures)</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> material: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>material name to be used for the model</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setmodeloverridecallback" class="tsd-anchor"></a>
+					<h3>set<wbr>Model<wbr>Override<wbr>Callback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Model<wbr>Override<wbr>Callback<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../interfaces/itemmodel.modeloverridefunction.html" class="tsd-signature-type">ModelOverrideFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7050">core-engine.d.ts:7050</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../interfaces/itemmodel.modeloverridefunction.html" class="tsd-signature-type">ModelOverrideFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setspriteuirender" class="tsd-anchor"></a>
+					<h3>set<wbr>Sprite<wbr>UiRender</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Sprite<wbr>UiRender<span class="tsd-signature-symbol">(</span>isSprite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6946">core-engine.d.ts:6946</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>isSprite: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="settexture" class="tsd-anchor"></a>
+					<h3>set<wbr>Texture</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Texture<span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6977">core-engine.d.ts:6977</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets item model&#39;s texture in both player&#39;s inventory and in hand</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>texture: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>texture name to be used for the model (use &quot;atlas::terrain&quot; for block textures)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setuiglintmaterial" class="tsd-anchor"></a>
+					<h3>set<wbr>UiGlint<wbr>Material</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>UiGlint<wbr>Material<span class="tsd-signature-symbol">(</span>material<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7014">core-engine.d.ts:7014</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>material: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setuimaterial" class="tsd-anchor"></a>
+					<h3>set<wbr>UiMaterial</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>UiMaterial<span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L7008">core-engine.d.ts:7008</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets item model&#39;s material only in player&#39;s inventory</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>texture: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>material name to be used for the model</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setuimodel" class="tsd-anchor"></a>
+					<h3>set<wbr>UiModel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>UiModel<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a><span class="tsd-signature-symbol"> | </span><a href="../classes/icrender.model.html" class="tsd-signature-type">Model</a><span class="tsd-signature-symbol"> | </span><a href="../classes/blockrenderer.model.html" class="tsd-signature-type">Model</a>, texture<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, material<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6971">core-engine.d.ts:6971</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets item&#39;s model to display only in player&#39;s inventory</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="../classes/rendermesh.html" class="tsd-signature-type">RenderMesh</a><span class="tsd-signature-symbol"> | </span><a href="../classes/icrender.model.html" class="tsd-signature-type">Model</a><span class="tsd-signature-symbol"> | </span><a href="../classes/blockrenderer.model.html" class="tsd-signature-type">Model</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><a href="../classes/rendermesh.html">RenderMesh</a>, <a href="../classes/icrender.model.html">ICRender.Model</a> or <a href="../classes/blockrenderer.model.html">BlockRenderer.Model</a> to be used as item model</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> texture: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>texture name to be used for the model (use &quot;atlas::terrain&quot; for block textures)</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> material: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>material name to be used for the model</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
+					<a name="setuitexture" class="tsd-anchor"></a>
+					<h3>set<wbr>UiTexture</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>UiTexture<span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L6989">core-engine.d.ts:6989</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets item model&#39;s texture only in player&#39;s inventory</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>texture: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>texture name to be used for the model (use &quot;atlas::terrain&quot; for block textures)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="itemmodel.html" class="tsd-signature-type">ItemModel</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label pp-nav pp-group">
+						<span>Guides</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/config.html">Mod <wbr>Configuration <wbr>Files</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/callbacks.html">Callbacks</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/abilities.html">Abilities</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/attributes.html">Attributes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/materials.html">Materials and <wbr>Shaders</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/biomes.html">Biomes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/dimensions.html">Dimensions</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Additional <wbr>Information</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/contributing.html">Contributing</a>
+					</li>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="itemmodel.html">Item<wbr>Model</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/itemmodel.iconrebuildlistener.html" class="tsd-kind-icon">Icon<wbr>Rebuild<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/itemmodel.modeloverridefunction.html" class="tsd-kind-icon">Model<wbr>Override<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-namespace">
+						<a href="itemmodel.html#data" class="tsd-kind-icon">data</a>
+					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-namespace">
+						<a href="itemmodel.html#id" class="tsd-kind-icon">id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getallmodels" class="tsd-kind-icon">get<wbr>All<wbr>Models</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getemptymeshfrompool" class="tsd-kind-icon">get<wbr>Empty<wbr>Mesh<wbr>From<wbr>Pool</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getfor" class="tsd-kind-icon">get<wbr>For</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getforwithfallback" class="tsd-kind-icon">get<wbr>For<wbr>With<wbr>Fallback</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getitemmeshtexturefor" class="tsd-kind-icon">get<wbr>Item<wbr>Mesh<wbr>Texture<wbr>For</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getitemrendermeshfor" class="tsd-kind-icon">get<wbr>Item<wbr>Render<wbr>Mesh<wbr>For</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#newstandalone" class="tsd-kind-icon">new<wbr>Standalone</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#releasemesh" class="tsd-kind-icon">release<wbr>Mesh</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setcurrentcachegroup" class="tsd-kind-icon">set<wbr>Current<wbr>Cache<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="itemmodel.html#tryreleasemodelbitmapsonlowmemory" class="tsd-kind-icon">try<wbr>Release<wbr>Model<wbr>Bitmaps<wbr>OnLow<wbr>Memory</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#addtomesh" class="tsd-kind-icon">add<wbr>ToMesh</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getcachekey" class="tsd-kind-icon">get<wbr>Cache<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#geticonbitmap" class="tsd-kind-icon">get<wbr>Icon<wbr>Bitmap</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#geticonbitmapnoreload" class="tsd-kind-icon">get<wbr>Icon<wbr>Bitmap<wbr>NoReload</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getitemrendermesh" class="tsd-kind-icon">get<wbr>Item<wbr>Render<wbr>Mesh</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getmeshtexturename" class="tsd-kind-icon">get<wbr>Mesh<wbr>Texture<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getmodelforiteminstance" class="tsd-kind-icon">get<wbr>Model<wbr>For<wbr>Item<wbr>Instance</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getshaderuniforms" class="tsd-kind-icon">get<wbr>Shader<wbr>Uniforms</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getspritemesh" class="tsd-kind-icon">get<wbr>Sprite<wbr>Mesh</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getuiglintmaterialname" class="tsd-kind-icon">get<wbr>UiGlint<wbr>Material<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getuimaterialname" class="tsd-kind-icon">get<wbr>UiMaterial<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getuitexturename" class="tsd-kind-icon">get<wbr>UiTexture<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getworldglintmaterialname" class="tsd-kind-icon">get<wbr>World<wbr>Glint<wbr>Material<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getworldmaterialname" class="tsd-kind-icon">get<wbr>World<wbr>Material<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#getworldtexturename" class="tsd-kind-icon">get<wbr>World<wbr>Texture<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#isemptyinui" class="tsd-kind-icon">is<wbr>Empty<wbr>InUi</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#isemptyinworld" class="tsd-kind-icon">is<wbr>Empty<wbr>InWorld</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#isnonexistant" class="tsd-kind-icon">is<wbr>Non<wbr>Existant</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#isspriteinui" class="tsd-kind-icon">is<wbr>Sprite<wbr>InUi</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#isspriteinworld" class="tsd-kind-icon">is<wbr>Sprite<wbr>InWorld</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#isusingoverridecallback" class="tsd-kind-icon">is<wbr>Using<wbr>Override<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#newtexture" class="tsd-kind-icon">new<wbr>Texture</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#occupy" class="tsd-kind-icon">occupy</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#overrideshand" class="tsd-kind-icon">overrides<wbr>Hand</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#overridesui" class="tsd-kind-icon">overrides<wbr>Ui</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#queuereload" class="tsd-kind-icon">queue<wbr>Reload</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#releaseicon" class="tsd-kind-icon">release<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#reloadicon" class="tsd-kind-icon">reload<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#reloadiconifdirty" class="tsd-kind-icon">reload<wbr>Icon<wbr>IfDirty</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#removemoduispritetexture" class="tsd-kind-icon">remove<wbr>Mod<wbr>UiSprite<wbr>Texture</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setcachekey" class="tsd-kind-icon">set<wbr>Cache<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setglintmaterial" class="tsd-kind-icon">set<wbr>Glint<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#sethandglintmaterial" class="tsd-kind-icon">set<wbr>Hand<wbr>Glint<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#sethandmaterial" class="tsd-kind-icon">set<wbr>Hand<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#sethandmodel" class="tsd-kind-icon">set<wbr>Hand<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#sethandtexture" class="tsd-kind-icon">set<wbr>Hand<wbr>Texture</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setitemtexture" class="tsd-kind-icon">set<wbr>Item<wbr>Texture</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setitemtexturepath" class="tsd-kind-icon">set<wbr>Item<wbr>Texture<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setmaterial" class="tsd-kind-icon">set<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setmoduispritebitmap" class="tsd-kind-icon">set<wbr>Mod<wbr>UiSprite<wbr>Bitmap</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setmoduispritename" class="tsd-kind-icon">set<wbr>Mod<wbr>UiSprite<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setmoduispritepath" class="tsd-kind-icon">set<wbr>Mod<wbr>UiSprite<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setmodel" class="tsd-kind-icon">set<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setmodeloverridecallback" class="tsd-kind-icon">set<wbr>Model<wbr>Override<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setspriteuirender" class="tsd-kind-icon">set<wbr>Sprite<wbr>UiRender</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#settexture" class="tsd-kind-icon">set<wbr>Texture</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setuiglintmaterial" class="tsd-kind-icon">set<wbr>UiGlint<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setuimaterial" class="tsd-kind-icon">set<wbr>UiMaterial</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setuimodel" class="tsd-kind-icon">set<wbr>UiModel</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-namespace">
+						<a href="itemmodel.html#setuitexture" class="tsd-kind-icon">set<wbr>UiTexture</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.json"><' + '/script>');</script>
+</body>
+</html>

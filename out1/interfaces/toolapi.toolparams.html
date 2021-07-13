@@ -1,0 +1,741 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ToolParams | Core Engine API</title>
+	<meta name="description" content="Documentation for Core Engine API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Core Engine API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/toolapi.html">ToolAPI</a>
+				</li>
+				<li>
+					<a href="toolapi.toolparams.html">ToolParams</a>
+				</li>
+			</ul>
+			<h1>Interface ToolParams</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Object containing additional parameters and functions used by Core Engine
+						to work with the tool</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ToolParams</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#brokenid" class="tsd-kind-icon">broken<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#calcdestroytime" class="tsd-kind-icon">calc<wbr>Destroy<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#damage" class="tsd-kind-icon">damage</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#isnative" class="tsd-kind-icon">is<wbr>Native</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#isweapon" class="tsd-kind-icon">is<wbr>Weapon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#modifyenchant" class="tsd-kind-icon">modify<wbr>Enchant</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#onattack" class="tsd-kind-icon">on<wbr>Attack</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#onbroke" class="tsd-kind-icon">on<wbr>Broke</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#ondestroy" class="tsd-kind-icon">on<wbr>Destroy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="toolapi.toolparams.html#onmineblock" class="tsd-kind-icon">on<wbr>Mine<wbr>Block</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="brokenid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> broken<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">broken<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11440">core-engine.d.ts:11440</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Numeric id of the item that replaces tool item when it&#39;s broken.
+							By default it is 0 (the tool disappears)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="calcdestroytime" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> calc<wbr>Destroy<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">calc<wbr>Destroy<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>tool<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, coords<span class="tsd-signature-symbol">: </span><a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a>, block<span class="tsd-signature-symbol">: </span><a href="tile.html" class="tsd-signature-type">Tile</a>, timeData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>base<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>devider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>modifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, defaultTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, enchantData<span class="tsd-signature-symbol">?: </span><a href="toolapi.enchantdata.html" class="tsd-signature-type">EnchantData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11463">core-engine.d.ts:11463</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Function used to recalculate block destroy time based on some custom
+							logic</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>tool item</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>coordinates where the block is being broken</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>the block that is being broken</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>some time properties that can be used to calculate
+								destroy time for the tool and block</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>base destroy time of the block</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>tool material devider</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>divider applied due to efficiency enchantment</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>default block destroy time, calculated as
+								<em>base / divider / modifier</em></p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>tool&#39;s enchant data</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>tool<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, coords<span class="tsd-signature-symbol">: </span><a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a>, block<span class="tsd-signature-symbol">: </span><a href="tile.html" class="tsd-signature-type">Tile</a>, timeData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>base<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>devider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>modifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, defaultTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, enchantData<span class="tsd-signature-symbol">?: </span><a href="toolapi.enchantdata.html" class="tsd-signature-type">EnchantData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>tool: <a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a></h5>
+											</li>
+											<li>
+												<h5>coords: <a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a></h5>
+											</li>
+											<li>
+												<h5>block: <a href="tile.html" class="tsd-signature-type">Tile</a></h5>
+											</li>
+											<li>
+												<h5>timeData: <span class="tsd-signature-symbol">{ </span>base<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>devider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>modifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter">
+														<h5>base<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+													</li>
+													<li class="tsd-parameter">
+														<h5>devider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+													</li>
+													<li class="tsd-parameter">
+														<h5>modifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<h5>defaultTime: <span class="tsd-signature-type">number</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> enchantData: <a href="toolapi.enchantdata.html" class="tsd-signature-type">EnchantData</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="damage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> damage</h3>
+					<div class="tsd-signature tsd-kind-icon">damage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11446">core-engine.d.ts:11446</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Base damage of the instrument, is added to the material damage to
+							calculate the tool&#39;s final damage. Default is 0</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isnative" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Native</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Native<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11470">core-engine.d.ts:11470</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>If true, the tool is vanilla Minecraft tool. Generally used within
+								Core Engine code and should not be used within mods until you really
+							know what you&#39;re doing</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isweapon" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Weapon</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Weapon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11495">core-engine.d.ts:11495</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>If true, breaking blocks with this tool makes it break 2x faster,
+							otherwise attacking mobs breaks tool 2x faster</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="modifyenchant" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> modify<wbr>Enchant</h3>
+					<div class="tsd-signature tsd-kind-icon">modify<wbr>Enchant<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>enchantData<span class="tsd-signature-symbol">: </span><a href="toolapi.enchantdata.html" class="tsd-signature-type">EnchantData</a>, item<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, coords<span class="tsd-signature-symbol">?: </span><a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a>, block<span class="tsd-signature-symbol">?: </span><a href="tile.html" class="tsd-signature-type">Tile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11515">core-engine.d.ts:11515</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Function that is used to change enchant data object before all the
+								calculations. Can be used to add some enchantment properties, such as
+							silk touch, efficiency, unbreaking or fortune</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>tool&#39;s enchant data</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>tool item</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>coordinates where the block is being broken. Passed only if
+								the block is destroyed</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>destroyed block data. Passed only if the block is destroyed</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>enchantData<span class="tsd-signature-symbol">: </span><a href="toolapi.enchantdata.html" class="tsd-signature-type">EnchantData</a>, item<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, coords<span class="tsd-signature-symbol">?: </span><a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a>, block<span class="tsd-signature-symbol">?: </span><a href="tile.html" class="tsd-signature-type">Tile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>enchantData: <a href="toolapi.enchantdata.html" class="tsd-signature-type">EnchantData</a></h5>
+											</li>
+											<li>
+												<h5>item: <a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> coords: <a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <a href="tile.html" class="tsd-signature-type">Tile</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onattack" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Attack</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Attack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, victim<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, attacker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11489">core-engine.d.ts:11489</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Function that is called when players attacks some entity with the tool</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>tool item</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>unique numeric id of the entity that is attacked</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>true if default damage should not be applied to the instrument,
+								false otherwise</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, victim<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, attacker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>item: <a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a></h5>
+											</li>
+											<li>
+												<h5>victim: <span class="tsd-signature-type">number</span></h5>
+											</li>
+											<li>
+												<h5>attacker: <span class="tsd-signature-type">number</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onbroke" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Broke</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Broke<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11503">core-engine.d.ts:11503</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Function that is called when the instrument is broken</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>tool item</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>true if default breaking behavior (replacing by <em>brokenId</em> item)
+								should not be applied</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>item: <a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ondestroy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Destroy</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Destroy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, coords<span class="tsd-signature-symbol">: </span><a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a>, block<span class="tsd-signature-symbol">: </span><a href="tile.html" class="tsd-signature-type">Tile</a>, player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11480">core-engine.d.ts:11480</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Function that is called when the block is destroyed</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>tool item</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>coordinates where the block is destroyed</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>the block that is destroyed</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>true if default damage should not be applied to the instrument,
+								false otherwise</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, coords<span class="tsd-signature-symbol">: </span><a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a>, block<span class="tsd-signature-symbol">: </span><a href="tile.html" class="tsd-signature-type">Tile</a>, player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>item: <a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a></h5>
+											</li>
+											<li>
+												<h5>coords: <a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a></h5>
+											</li>
+											<li>
+												<h5>block: <a href="tile.html" class="tsd-signature-type">Tile</a></h5>
+											</li>
+											<li>
+												<h5>player: <span class="tsd-signature-type">number</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onmineblock" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Mine<wbr>Block</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Mine<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>coords<span class="tsd-signature-symbol">: </span><a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a>, carried<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, fullTile<span class="tsd-signature-symbol">: </span><a href="tile.html" class="tsd-signature-type">Tile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11524">core-engine.d.ts:11524</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Function that is called when the block that has a destroy function is
+							destroyed</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>coordinates where the block is destroyed</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>an item in player&#39;s hand</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>block that was destroyed</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>coords<span class="tsd-signature-symbol">: </span><a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a>, carried<span class="tsd-signature-symbol">: </span><a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a>, fullTile<span class="tsd-signature-symbol">: </span><a href="tile.html" class="tsd-signature-type">Tile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>coords: <a href="callback.itemusecoordinates.html" class="tsd-signature-type">ItemUseCoordinates</a></h5>
+											</li>
+											<li>
+												<h5>carried: <a href="iteminstance.html" class="tsd-signature-type">ItemInstance</a></h5>
+											</li>
+											<li>
+												<h5>fullTile: <a href="tile.html" class="tsd-signature-type">Tile</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label pp-nav pp-group">
+						<span>Guides</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/config.html">Mod <wbr>Configuration <wbr>Files</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/callbacks.html">Callbacks</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/abilities.html">Abilities</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/attributes.html">Attributes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/materials.html">Materials and <wbr>Shaders</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/biomes.html">Biomes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/dimensions.html">Dimensions</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Additional <wbr>Information</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/contributing.html">Contributing</a>
+					</li>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/toolapi.html">ToolAPI</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="toolapi.blockdata.html" class="tsd-kind-icon">Block<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="toolapi.blockmaterial.html" class="tsd-kind-icon">Block<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="toolapi.enchantdata.html" class="tsd-kind-icon">Enchant<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="toolapi.toolmaterial.html" class="tsd-kind-icon">Tool<wbr>Material</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="toolapi.toolparams.html" class="tsd-kind-icon">Tool<wbr>Params</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#brokenid" class="tsd-kind-icon">broken<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#calcdestroytime" class="tsd-kind-icon">calc<wbr>Destroy<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#damage" class="tsd-kind-icon">damage</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#isnative" class="tsd-kind-icon">is<wbr>Native</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#isweapon" class="tsd-kind-icon">is<wbr>Weapon</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#modifyenchant" class="tsd-kind-icon">modify<wbr>Enchant</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#onattack" class="tsd-kind-icon">on<wbr>Attack</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#onbroke" class="tsd-kind-icon">on<wbr>Broke</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#ondestroy" class="tsd-kind-icon">on<wbr>Destroy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="toolapi.toolparams.html#onmineblock" class="tsd-kind-icon">on<wbr>Mine<wbr>Block</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#addblockmaterial" class="tsd-kind-icon">add<wbr>Block<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#addtoolmaterial" class="tsd-kind-icon">add<wbr>Tool<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#dropexporbs" class="tsd-kind-icon">drop<wbr>Exp<wbr>Orbs</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#droporeexp" class="tsd-kind-icon">drop<wbr>Ore<wbr>Exp</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#fortunedropmodifier" class="tsd-kind-icon">fortune<wbr>Drop<wbr>Modifier</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#getblockdata" class="tsd-kind-icon">get<wbr>Block<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#getblockdestroylevel" class="tsd-kind-icon">get<wbr>Block<wbr>Destroy<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#getblockmaterial" class="tsd-kind-icon">get<wbr>Block<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#getblockmaterialname" class="tsd-kind-icon">get<wbr>Block<wbr>Material<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#getcarriedtooldata" class="tsd-kind-icon">get<wbr>Carried<wbr>Tool<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#getcarriedtoollevel" class="tsd-kind-icon">get<wbr>Carried<wbr>Tool<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#getdestroytimeviatool" class="tsd-kind-icon">get<wbr>Destroy<wbr>Time<wbr>Via<wbr>Tool</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#getenchantextradata" class="tsd-kind-icon">get<wbr>Enchant<wbr>Extra<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#gettooldata" class="tsd-kind-icon">get<wbr>Tool<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#gettoollevel" class="tsd-kind-icon">get<wbr>Tool<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#gettoollevelviablock" class="tsd-kind-icon">get<wbr>Tool<wbr>Level<wbr>Via<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#refresh" class="tsd-kind-icon">refresh</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#registerblockdigginglevel" class="tsd-kind-icon">register<wbr>Block<wbr>Digging<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#registerblockmaterial" class="tsd-kind-icon">register<wbr>Block<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#registerblockmaterialasarray" class="tsd-kind-icon">register<wbr>Block<wbr>Material<wbr>AsArray</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#registersword" class="tsd-kind-icon">register<wbr>Sword</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#registertool" class="tsd-kind-icon">register<wbr>Tool</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/toolapi.html#resetengine" class="tsd-kind-icon">reset<wbr>Engine</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.json"><' + '/script>');</script>
+</body>
+</html>

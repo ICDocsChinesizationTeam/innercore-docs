@@ -1,0 +1,1574 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Container | Core Engine API</title>
+	<meta name="description" content="Documentation for Core Engine API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Core Engine API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/ui.html">UI</a>
+				</li>
+				<li>
+					<a href="ui.container.html">Container</a>
+				</li>
+			</ul>
+			<h1>Class Container</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Containers are used to properly manipulate windows and save slots
+							contents and windows state between window opens. Every <a href="../modules/tileentity.html">TileEntity</a> has
+						a built-in container that can be accessed as <a href="../modules/tileentity.html#container">TileEntity.container</a></p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>deprecated</dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Container</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/recipes.workbenchfield.html" class="tsd-signature-type">WorkbenchField</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="ui.container.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="ui.container.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="ui.container.html#slots" class="tsd-kind-icon">slots</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="ui.container.html#tileentity" class="tsd-kind-icon">tile<wbr>Entity</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#applychanges" class="tsd-kind-icon">apply<wbr>Changes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#asscriptablefield" class="tsd-kind-icon">as<wbr>Scriptable<wbr>Field</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#clearslot" class="tsd-kind-icon">clear<wbr>Slot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#dropat" class="tsd-kind-icon">drop<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#dropslot" class="tsd-kind-icon">drop<wbr>Slot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getbinding" class="tsd-kind-icon">get<wbr>Binding</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getelement" class="tsd-kind-icon">get<wbr>Element</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getfieldslot" class="tsd-kind-icon">get<wbr>Field<wbr>Slot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getfullslot" class="tsd-kind-icon">get<wbr>Full<wbr>Slot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getguicontent" class="tsd-kind-icon">get<wbr>Gui<wbr>Content</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getguiscreen" class="tsd-kind-icon">get<wbr>Gui<wbr>Screen</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getparent" class="tsd-kind-icon">get<wbr>Parent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getslot" class="tsd-kind-icon">get<wbr>Slot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#gettext" class="tsd-kind-icon">get<wbr>Text</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getvalue" class="tsd-kind-icon">get<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#getwindow" class="tsd-kind-icon">get<wbr>Window</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#invalidateui" class="tsd-kind-icon">invalidateUI</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#invalidateuidrawing" class="tsd-kind-icon">invalidateUIDrawing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#invalidateuielements" class="tsd-kind-icon">invalidateUIElements</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#iselementtouched" class="tsd-kind-icon">is<wbr>Element<wbr>Touched</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#islegacycontainer" class="tsd-kind-icon">is<wbr>Legacy<wbr>Container</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#isopened" class="tsd-kind-icon">is<wbr>Opened</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#openas" class="tsd-kind-icon">open<wbr>As</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#refreshslots" class="tsd-kind-icon">refresh<wbr>Slots</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#setbinding" class="tsd-kind-icon">set<wbr>Binding</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#setoncloselistener" class="tsd-kind-icon">set<wbr>OnClose<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#setparent" class="tsd-kind-icon">set<wbr>Parent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#setscale" class="tsd-kind-icon">set<wbr>Scale</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#setslot" class="tsd-kind-icon">set<wbr>Slot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#settext" class="tsd-kind-icon">set<wbr>Text</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#setwbslotnameprefix" class="tsd-kind-icon">set<wbr>WbSlot<wbr>Name<wbr>Prefix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#validateall" class="tsd-kind-icon">validate<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ui.container.html#validateslot" class="tsd-kind-icon">validate<wbr>Slot</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Container<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ui.container.html" class="tsd-signature-type">Container</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Container<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/tileentity.html" class="tsd-signature-type">TileEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ui.container.html" class="tsd-signature-type">Container</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11602">core-engine.d.ts:11602</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new instance of <a href="ui.container.html">Container</a></p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="ui.container.html" class="tsd-signature-type">Container</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11606">core-engine.d.ts:11606</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new instance of <a href="ui.container.html">Container</a> and initializes its parent.
+									See <a href="ui.container.html#setparent">Container.setParent</a> for details</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parent: <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/tileentity.html" class="tsd-signature-type">TileEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="ui.container.html" class="tsd-signature-type">Container</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="parent" class="tsd-anchor"></a>
+					<h3>parent</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/tileentity.html" class="tsd-signature-type">TileEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11622">core-engine.d.ts:11622</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>If container is a part of <a href="../modules/tileentity.html">TileEntity</a>, this field stores reference
+								to it, otherwise null. You can also assign any value of any type to
+								it using <a href="ui.container.html#setparent">Container.setParent</a> method or using constructor
+								parameter. Consider using <a href="ui.container.html#getparent">Container.getParent</a> instead of direct
+							field access</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="slots" class="tsd-anchor"></a>
+					<h3>slots</h3>
+					<div class="tsd-signature tsd-kind-icon">slots<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11629">core-engine.d.ts:11629</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../interfaces/ui.slot.html" class="tsd-signature-type">Slot</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="tileentity" class="tsd-anchor"></a>
+					<h3>tile<wbr>Entity</h3>
+					<div class="tsd-signature tsd-kind-icon">tile<wbr>Entity<span class="tsd-signature-symbol">:</span> <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/tileentity.html" class="tsd-signature-type">TileEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11627">core-engine.d.ts:11627</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Same as <a href="ui.container.html#parent">Container.parent</a></p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="applychanges" class="tsd-anchor"></a>
+					<h3>apply<wbr>Changes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Changes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11860">core-engine.d.ts:11860</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>No longer supported</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="asscriptablefield" class="tsd-anchor"></a>
+					<h3>as<wbr>Scriptable<wbr>Field</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">as<wbr>Scriptable<wbr>Field<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.slot.html" class="tsd-signature-type">Slot</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/recipes.workbenchfield.html">WorkbenchField</a>.<a href="../interfaces/recipes.workbenchfield.html#asscriptablefield">asScriptableField</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11879">core-engine.d.ts:11879</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ui.slot.html" class="tsd-signature-type">Slot</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>js array of all slots</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clearslot" class="tsd-anchor"></a>
+					<h3>clear<wbr>Slot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>Slot<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11697">core-engine.d.ts:11697</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clears slot&#39;s contents</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>slot name</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11732">core-engine.d.ts:11732</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Closes currently opened window</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dropat" class="tsd-anchor"></a>
+					<h3>drop<wbr>At</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>At<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11710">core-engine.d.ts:11710</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Drops the contents of all the slots in the container on the specified
+									coordinates and clears them</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dropslot" class="tsd-anchor"></a>
+					<h3>drop<wbr>Slot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Slot<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a>, x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11704">core-engine.d.ts:11704</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Drops slot&#39;s contents on the specified coordinates and clears the
+									slot</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>slot name</p>
+									</div>
+								</li>
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getbinding" class="tsd-anchor"></a>
+					<h3>get<wbr>Binding</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Binding<span class="tsd-signature-symbol">(</span>elementName<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a>, bindingName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11788">core-engine.d.ts:11788</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets any value from the element</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>elementName: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>element name</p>
+									</div>
+								</li>
+								<li>
+									<h5>bindingName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>binding name, you can access the value from the
+											element by this name. Some binding names are reserved for additional
+											element information, e.g. &quot;element_obj&quot; contains pointer to the
+											current object and &quot;element_rect&quot; contains android.graphics.Rect
+										object containing drawing rectangle</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<p>value that was get from the element or null if the element
+							doesn&#39;t exist</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getelement" class="tsd-anchor"></a>
+					<h3>get<wbr>Element</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Element<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.element.html" class="tsd-signature-type">Element</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11766">core-engine.d.ts:11766</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>element name</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ui.element.html" class="tsd-signature-type">Element</a></h4>
+							<p>window&#39;s element by its name</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getfieldslot" class="tsd-anchor"></a>
+					<h3>get<wbr>Field<wbr>Slot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Field<wbr>Slot<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.slot.html" class="tsd-signature-type">Slot</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/recipes.workbenchfield.html">WorkbenchField</a>.<a href="../interfaces/recipes.workbenchfield.html#getfieldslot">getFieldSlot</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11874">core-engine.d.ts:11874</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>slot: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>slot index</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ui.slot.html" class="tsd-signature-type">Slot</a></h4>
+							<p>workbench slot instance by slot index</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getfullslot" class="tsd-anchor"></a>
+					<h3>get<wbr>Full<wbr>Slot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Full<wbr>Slot<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.fullslot.html" class="tsd-signature-type">FullSlot</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11667">core-engine.d.ts:11667</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the slot by its name. If a slot with specified name doesn&#39;t
+									exists, creates an empty one with specified name</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>slot name</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ui.fullslot.html" class="tsd-signature-type">FullSlot</a></h4>
+							<p>contents of the slot in a <a href="../interfaces/ui.fullslot.html">FullSlot</a> object containing
+							more useful methods for slot manipulation</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getguicontent" class="tsd-anchor"></a>
+					<h3>get<wbr>Gui<wbr>Content</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Gui<wbr>Content<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ui.windowcontent.html" class="tsd-signature-type">WindowContent</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11760">core-engine.d.ts:11760</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ui.windowcontent.html" class="tsd-signature-type">WindowContent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>window&#39;s content object (usually specified in the window&#39;s
+							constructor) if a window was opened in the container, null otherwise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getguiscreen" class="tsd-anchor"></a>
+					<h3>get<wbr>Gui<wbr>Screen</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Gui<wbr>Screen<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11754">core-engine.d.ts:11754</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Same as <a href="ui.container.html#getwindow">Container.getWindow</a></p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getparent" class="tsd-anchor"></a>
+					<h3>get<wbr>Parent</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Parent<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/tileentity.html" class="tsd-signature-type">TileEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11649">core-engine.d.ts:11649</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Getter for <a href="ui.container.html#parent">Container.parent</a> field</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/tileentity.html" class="tsd-signature-type">TileEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getslot" class="tsd-anchor"></a>
+					<h3>get<wbr>Slot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Slot<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.slot.html" class="tsd-signature-type">Slot</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11658">core-engine.d.ts:11658</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the slot by its name. If a slot with specified name doesn&#39;t
+									exists, creates an empty one with specified name</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>slot name</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ui.slot.html" class="tsd-signature-type">Slot</a></h4>
+							<p>contents of the slot in a <a href="../interfaces/ui.slot.html">Slot</a> object. You can modify it
+							to change the contents of the slot</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gettext" class="tsd-anchor"></a>
+					<h3>get<wbr>Text</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Text<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11817">core-engine.d.ts:11817</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>element name</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>&quot;text&quot; binding value, usually the text displayed on the
+							element, or null if no element with specified name exist</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getvalue" class="tsd-anchor"></a>
+					<h3>get<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Value<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11802">core-engine.d.ts:11802</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>element name</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>&quot;value&quot; binding value, e.g. scale value, or null if no
+							element with specified name exist</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getwindow" class="tsd-anchor"></a>
+					<h3>get<wbr>Window</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Window<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11721">core-engine.d.ts:11721</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>currently opened <a href="../interfaces/ui.iwindow.html">IWindow</a> or null if no window is currently
+							opened in the container</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="invalidateui" class="tsd-anchor"></a>
+					<h3>invalidateUI</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">invalidateUI<span class="tsd-signature-symbol">(</span>onCurrentThread<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11850">core-engine.d.ts:11850</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Forces ui elements and drawables of the window to refresh</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> onCurrentThread: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, the elements drawables will be refreshed
+											immediately, otherwise refresh event will be posted. Default value
+											if false. Ensure you are in the UI thread if you pass true as the
+										parameter</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="invalidateuidrawing" class="tsd-anchor"></a>
+					<h3>invalidateUIDrawing</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">invalidateUIDrawing<span class="tsd-signature-symbol">(</span>onCurrentThread<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11841">core-engine.d.ts:11841</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Forces ui drawables of the window to refresh</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> onCurrentThread: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, the drawables will be refreshed
+											immediately, otherwise refresh event will be posted. Default value
+											if false. Ensure you are in the UI thread if you pass true as the
+										parameter</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="invalidateuielements" class="tsd-anchor"></a>
+					<h3>invalidateUIElements</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">invalidateUIElements<span class="tsd-signature-symbol">(</span>onCurrentThread<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11832">core-engine.d.ts:11832</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Forces ui elements of the window to refresh</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> onCurrentThread: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, the elements will be refreshed
+											immediately, otherwise refresh event will be posted. Default value
+											if false. Ensure you are in the UI thread if you pass true as the
+										parameter</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="iselementtouched" class="tsd-anchor"></a>
+					<h3>is<wbr>Element<wbr>Touched</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Element<wbr>Touched<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11823">core-engine.d.ts:11823</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>element name</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if the element is currently touched</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="islegacycontainer" class="tsd-anchor"></a>
+					<h3>is<wbr>Legacy<wbr>Container</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Legacy<wbr>Container<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11636">core-engine.d.ts:11636</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">true</span></h4>
+							<p>false if container supports multiplayer, true otherwise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isopened" class="tsd-anchor"></a>
+					<h3>is<wbr>Opened</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Opened<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11749">core-engine.d.ts:11749</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true, if some window is opened in the container</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="openas" class="tsd-anchor"></a>
+					<h3>open<wbr>As</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>As<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11727">core-engine.d.ts:11727</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Opens <a href="../interfaces/ui.iwindow.html">IWindow</a> object in the container</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>window: <a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><a href="../interfaces/ui.iwindow.html">IWindow</a> object to be opened</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="refreshslots" class="tsd-anchor"></a>
+					<h3>refresh<wbr>Slots</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">refresh<wbr>Slots<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11855">core-engine.d.ts:11855</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>No longer supported</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setbinding" class="tsd-anchor"></a>
+					<h3>set<wbr>Binding</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Binding<span class="tsd-signature-symbol">(</span>elementName<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a>, bindingName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11775">core-engine.d.ts:11775</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Passes any value to the element</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>elementName: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>element name</p>
+									</div>
+								</li>
+								<li>
+									<h5>bindingName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>binding name, you can access the value from the
+										element by this name</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>value to be passed to the element</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setoncloselistener" class="tsd-anchor"></a>
+					<h3>set<wbr>OnClose<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>OnClose<wbr>Listener<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>onClose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="ui.container.html" class="tsd-signature-type">Container</a>, window<span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11738">core-engine.d.ts:11738</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets an object to be notified when the window is closed</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listener: <span class="tsd-signature-symbol">{ </span>onClose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="ui.container.html" class="tsd-signature-type">Container</a>, window<span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>object to be notified when the window is closed</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>on<wbr>Close<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="ui.container.html" class="tsd-signature-type">Container</a>, window<span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<dl class="tsd-comment-tags">
+													<dt>param</dt>
+													<dd><p><a href="ui.container.html">Container</a> the window was opened in</p>
+													</dd>
+													<dt>param</dt>
+													<dd><p>an instance of <a href="../interfaces/ui.iwindow.html">IWindow</a> that was opened</p>
+													</dd>
+												</dl>
+											</div>
+											<ul class="tsd-parameters">
+												<li class="tsd-parameter-signature">
+													<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+														<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="ui.container.html" class="tsd-signature-type">Container</a>, window<span class="tsd-signature-symbol">: </span><a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+													</ul>
+													<ul class="tsd-descriptions">
+														<li class="tsd-description">
+															<h4 class="tsd-parameters-title">Parameters</h4>
+															<ul class="tsd-parameters">
+																<li>
+																	<h5>container: <a href="ui.container.html" class="tsd-signature-type">Container</a></h5>
+																</li>
+																<li>
+																	<h5>window: <a href="../interfaces/ui.iwindow.html" class="tsd-signature-type">IWindow</a></h5>
+																</li>
+															</ul>
+															<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setparent" class="tsd-anchor"></a>
+					<h3>set<wbr>Parent</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Parent<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/tileentity.html" class="tsd-signature-type">TileEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11644">core-engine.d.ts:11644</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets container&#39;s parent object, for <a href="../modules/tileentity.html">TileEntity</a>&#39;s container it
+										should be a <a href="../modules/tileentity.html">TileEntity</a> reference, otherwise you can pass any
+									value to be used in your code later</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parent: <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/tileentity.html" class="tsd-signature-type">TileEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>an object to be set as container&#39;s parent</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setscale" class="tsd-anchor"></a>
+					<h3>set<wbr>Scale</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Scale<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11795">core-engine.d.ts:11795</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets &quot;value&quot; binding value for the element. Used to set scales values</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>element name</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>value to be set for the element</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setslot" class="tsd-anchor"></a>
+					<h3>set<wbr>Slot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Slot<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Slot<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, extra<span class="tsd-signature-symbol">: </span><a href="itemextradata.html" class="tsd-signature-type">ItemExtraData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11674">core-engine.d.ts:11674</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set slot&#39;s content by its name. If a slot with specified name doesn&#39;t
+									exists, creates an empty one with specified name and item</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>slot name</p>
+									</div>
+								</li>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11683">core-engine.d.ts:11683</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set slot&#39;s content by its name. If a slot with specified name doesn&#39;t
+									exists, creates new with specified name and item</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>slot name</p>
+									</div>
+								</li>
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>extra: <a href="itemextradata.html" class="tsd-signature-type">ItemExtraData</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>item extra value. Note that it should be an instance of
+										ItemExtraData and not its numeric id</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="settext" class="tsd-anchor"></a>
+					<h3>set<wbr>Text</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Text<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11809">core-engine.d.ts:11809</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets &quot;text&quot; binding value for the element. Used to set element&#39;s text</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>element name</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>value to be set for the element</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setwbslotnameprefix" class="tsd-anchor"></a>
+					<h3>set<wbr>WbSlot<wbr>Name<wbr>Prefix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>WbSlot<wbr>Name<wbr>Prefix<span class="tsd-signature-symbol">(</span>prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11868">core-engine.d.ts:11868</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>If the container is a custom workbench, you can set the slot prefix
+										via this method call. <a href="ui.container.html#getfieldslot">Container.getFieldSlot</a> will get field slot
+									by <em>prefix + slot</em> name</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>prefix: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>custom workbench slot prefix</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="validateall" class="tsd-anchor"></a>
+					<h3>validate<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11715">core-engine.d.ts:11715</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Validates all the slots in the container</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="validateslot" class="tsd-anchor"></a>
+					<h3>validate<wbr>Slot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>Slot<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zheka2304/innercore-mod-toolchain/tree/master/toolchain-mod/toolchain/declarations/core-engine.d.ts#L11691">core-engine.d.ts:11691</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Validates slot contents. If the data value is less then 0, it becomes
+										0, if id is 0 or count is less then or equals to zero, slot is reset
+									to an empty one</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <a href="../modules/ui.html#elementname" class="tsd-signature-type">ElementName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>slot name</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label pp-nav pp-group">
+						<span>Guides</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/config.html">Mod <wbr>Configuration <wbr>Files</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/callbacks.html">Callbacks</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/abilities.html">Abilities</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/attributes.html">Attributes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/materials.html">Materials and <wbr>Shaders</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/biomes.html">Biomes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/dimensions.html">Dimensions</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Additional <wbr>Information</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../pages/contributing.html">Contributing</a>
+					</li>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/ui.html">UI</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/ui.frametexture.html">Frame<wbr>Texture</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/ui.frametexturesource.html">Frame<wbr>Texture<wbr>Source</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/ui.texturesource.html">Texture<wbr>Source</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+						<a href="ui.container.html" class="tsd-kind-icon">Container</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="ui.container.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="ui.container.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="ui.container.html#slots" class="tsd-kind-icon">slots</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="ui.container.html#tileentity" class="tsd-kind-icon">tile<wbr>Entity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#applychanges" class="tsd-kind-icon">apply<wbr>Changes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#asscriptablefield" class="tsd-kind-icon">as<wbr>Scriptable<wbr>Field</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#clearslot" class="tsd-kind-icon">clear<wbr>Slot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#close" class="tsd-kind-icon">close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#dropat" class="tsd-kind-icon">drop<wbr>At</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#dropslot" class="tsd-kind-icon">drop<wbr>Slot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getbinding" class="tsd-kind-icon">get<wbr>Binding</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getelement" class="tsd-kind-icon">get<wbr>Element</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getfieldslot" class="tsd-kind-icon">get<wbr>Field<wbr>Slot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getfullslot" class="tsd-kind-icon">get<wbr>Full<wbr>Slot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getguicontent" class="tsd-kind-icon">get<wbr>Gui<wbr>Content</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getguiscreen" class="tsd-kind-icon">get<wbr>Gui<wbr>Screen</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getparent" class="tsd-kind-icon">get<wbr>Parent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getslot" class="tsd-kind-icon">get<wbr>Slot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#gettext" class="tsd-kind-icon">get<wbr>Text</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getvalue" class="tsd-kind-icon">get<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#getwindow" class="tsd-kind-icon">get<wbr>Window</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#invalidateui" class="tsd-kind-icon">invalidateUI</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#invalidateuidrawing" class="tsd-kind-icon">invalidateUIDrawing</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#invalidateuielements" class="tsd-kind-icon">invalidateUIElements</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#iselementtouched" class="tsd-kind-icon">is<wbr>Element<wbr>Touched</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#islegacycontainer" class="tsd-kind-icon">is<wbr>Legacy<wbr>Container</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#isopened" class="tsd-kind-icon">is<wbr>Opened</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#openas" class="tsd-kind-icon">open<wbr>As</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#refreshslots" class="tsd-kind-icon">refresh<wbr>Slots</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#setbinding" class="tsd-kind-icon">set<wbr>Binding</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#setoncloselistener" class="tsd-kind-icon">set<wbr>OnClose<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#setparent" class="tsd-kind-icon">set<wbr>Parent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#setscale" class="tsd-kind-icon">set<wbr>Scale</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#setslot" class="tsd-kind-icon">set<wbr>Slot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#settext" class="tsd-kind-icon">set<wbr>Text</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#setwbslotnameprefix" class="tsd-kind-icon">set<wbr>WbSlot<wbr>Name<wbr>Prefix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#validateall" class="tsd-kind-icon">validate<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ui.container.html#validateslot" class="tsd-kind-icon">validate<wbr>Slot</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.json"><' + '/script>');</script>
+</body>
+</html>

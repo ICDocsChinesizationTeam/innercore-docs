@@ -1,0 +1,433 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Callbacks | Core Engine API</title>
+	<meta name="description" content="Documentation for Core Engine API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Core Engine API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="config.html">Guides</a>
+				</li>
+				<li>
+					<a href="callbacks.html">Callbacks</a>
+				</li>
+			</ul>
+			<h1>Callbacks</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p>Callbacks is a mechanism that allows to handle and prevent some of the in-game
+					events as well as user-invoked events. When some native event occurs, all callback functions registered for this event are called. To add a callback to some event, use
+					<a href="../modules/callback.html#addcallback">Callback.addCallback</a> function. To invoke a custom event, use
+					<a href="../modules/callback.html#invokecallback">Callback.invokeCallback</a>. To prevent the default flow of the event,
+				use <a href="../modules/game.html#prevent">Game.prevent</a>. </p>
+				<p>All pre-defined (in-game) callbacks with their functions interfaces are listed below.
+					If no function interface is provided, use a function with no params and
+				return value:</p>
+				<a href="#ui-callbacks" id="ui-callbacks" style="color: inherit; text-decoration: none;">
+					<h2>UI callbacks</h2>
+				</a>
+				<p><em>ContainerOpened</em> occurs when user opens some container. See
+				<a href="../interfaces/callback.containeropenedfunction.html">ContainerOpenedFunction</a> for details</p>
+				<p><em>ContainerClosed</em> occurs when some container is closed. See
+				<a href="../interfaces/callback.containerclosedfunction.html">ContainerClosedFunction</a> for details</p>
+				<p><em>CustomWindowOpened</em> occurs when every single window is opened. Called for
+					every window and subwindow. Examples of subwindows include standard
+					inventory, window title, main window, etc. See <a href="../interfaces/callback.customwindowopenedfunction.html">CustomWindowOpenedFunction</a>
+				for details</p>
+				<p><em>CustomWindowClosed</em> occurs when every single window is closed. See
+				<a href="../interfaces/callback.customwindowclosedfunction.html">CustomWindowClosedFunction</a> for details</p>
+				<a href="#workbench-callbacks" id="workbench-callbacks" style="color: inherit; text-decoration: none;">
+					<h2>Workbench callbacks</h2>
+				</a>
+				<p><em>CraftRecipePreProvided</em> occurs before crafting is performed. See
+				<a href="../interfaces/callback.craftrecipepreprovidedfunction.html">CraftRecipePreProvidedFunction</a> for details</p>
+				<p><em>CraftRecipeProvided</em> occurs after crafting recipe result is determined. See
+				<a href="../interfaces/callback.craftrecipeprovidedfunction.html">CraftRecipeProvidedFunction</a> for details</p>
+				<p><em>VanillaWorkbenchCraft</em> occurs just before adding crafting recipe result to
+				player&#39;s inventory. See <a href="../interfaces/callback.vanillaworkbenchcraftfunction.html">VanillaWorkbenchCraftFunction</a> for details</p>
+				<p><em>VanillaWorkbenchPostCraft</em> occurs after adding crafting recipe result to
+				player&#39;s inventory. See <a href="../interfaces/callback.vanillaworkbenchcraftfunction.html">VanillaWorkbenchCraftFunction</a> for details</p>
+				<p><em>VanillaWorkbenchRecipeSelected</em> occurs when player selects recipe in the
+				workbench. See <a href="../interfaces/callback.vanillaworkbenchrecipeselectedfunction.html">VanillaWorkbenchRecipeSelectedFunction</a> for details</p>
+				<a href="#inner-core-and-core-engine-callbacks" id="inner-core-and-core-engine-callbacks" style="color: inherit; text-decoration: none;">
+					<h2>Inner Core and Core Engine callbacks</h2>
+				</a>
+				<p><em>CoreConfigured</em> occurs when Inner Core default configuration file is loaded.
+				See <a href="../interfaces/callback.coreconfiguredfunction.html">CoreConfiguredFunction</a> for details</p>
+				<p><em>PreLoaded</em> occurs directly after &quot;CoreConfigured&quot; callback</p>
+				<p><em>APILoaded</em> occurs directly after &quot;PreLoaded&quot; callback</p>
+				<p><em>ModsLoaded</em> occurs directly after &quot;APILoaded&quot; callback</p>
+				<p><em>PostLoaded</em> occurs directly after &quot;ModsLoaded&quot; callback. Last of the loading
+				callbacks</p>
+				<p><em>AppSuspended</em> occurs when Minecraft application is paused</p>
+				<p><em>NativeGuiChanged</em> occurs when vanilla screen changes. See
+				<a href="../interfaces/callback.nativeguichangedfunction.html">NativeGuiChangedFunction</a> for details</p>
+				<p><em>ReadSaves</em> occurs when reading saves from global scope. See
+				<a href="../interfaces/callback.savesfunction.html">SavesFunction</a> for details</p>
+				<p><em>WriteSaves</em> occurs when writing saves to global scope. See
+				<a href="../interfaces/callback.savesfunction.html">SavesFunction</a> for details</p>
+				<a href="#worlds-and-dimensions-callbacks" id="worlds-and-dimensions-callbacks" style="color: inherit; text-decoration: none;">
+					<h2>Worlds and dimensions callbacks</h2>
+				</a>
+				<p><em>tick</em> is main game tick. This callback is called 20 times per second and is
+					used to define all dynamic events in the game. Avoid overloading tick
+				functions and use <a href="../modules/updatable.html">Updatable</a>s and <a href="../modules/tileentity.html">TileEntity</a>s when possible</p>
+				<p><em>LevelSelected</em> occurs when the level is selected and will be loaded. See
+				<a href="../interfaces/callback.levelselectedfunction.html">LevelSelectedFunction</a> for details</p>
+				<p><em>LevelCreated</em> occurs when level is created in the memory of the device</p>
+				<p><em>LevelDisplayed</em> occurs when level is displayed to the player</p>
+				<p><em>LevelPreLoaded</em> occurs before some level initialization</p>
+				<p><em>LevelLoaded</em> occurs when level is completely loaded and is ready to be
+				displayed to the player</p>
+				<p><em>DimensionLoaded</em> occurs when vanilla or custom dimension is loaded. See
+				<a href="../interfaces/callback.dimensionloadedfunction.html">DimensionLoadedFunction</a> for details</p>
+				<p><em>LevelPreLeft</em> occurs when player starts leaving world</p>
+				<p><em>LevelLeft</em> occurs when player completes leaving world</p>
+				<p><em>PreBlocksDefined</em> occurs before saving block data while loading world</p>
+				<p><em>BlocksDefined</em> occurs after saving block data while loading world</p>
+				<a href="#player-actions-callbacks" id="player-actions-callbacks" style="color: inherit; text-decoration: none;">
+					<h2>Player actions callbacks</h2>
+				</a>
+				<p><em>DestroyBlock</em> occurs when player breaks block. See <a href="../interfaces/callback.destroyblockfunction.html">DestroyBlockFunction</a>
+				for details</p>
+				<p><em>DestroyBlockStart</em> occurs when player starts breaking block. Has the same
+					parameters as &quot;DestroyBlock&quot; callback, see <a href="../interfaces/callback.destroyblockfunction.html">DestroyBlockFunction</a> for
+				details</p>
+				<p><em>DestroyBlockContinue</em> occurs when player continues breaking block. Occurs
+					several times during one block breaking. See <a href="../interfaces/callback.destroyblockcontinuefunction.html">DestroyBlockContinueFunction</a>
+				for details</p>
+				<p><em>BuildBlock</em> occurs when player places block somewhere in the world. See
+				<a href="../interfaces/callback.buildblockfunction.html">BuildBlockFunction</a> for details</p>
+				<p><em>BlockChanged</em> occurs when block changes in the world. To capture this event
+					you should register blocks that you need to watch using
+					<a href="../modules/world.html#setblockchangecallbackenabled">World.setBlockChangeCallbackEnabled</a> method. All block changes that are
+					related to the registered blocks trigger this event. See
+				<a href="../interfaces/callback.blockchangedfunction.html">BlockChangedFunction</a> for details</p>
+				<p><em>ItemUse</em> occurs when player uses item on some block. Doesn&#39;t work if vanilla
+					container is opened (e.g. chest, workbench, etc.). Use &quot;ItemUseLocalServer&quot;
+				to track such events instead. See <a href="../interfaces/callback.itemusefunction.html">ItemUseFunction</a> for details</p>
+				<p><em>ItemUseLocalServer</em> occurs when player uses some item on the local server.
+					Can be used to prevent vanilla container from opening. See
+				<a href="../interfaces/callback.itemusefunction.html">ItemUseFunction</a> for details</p>
+				<p><em>FoodEaten</em> occurs when player eats food. See <a href="../interfaces/callback.foodeatenfunction.html">FoodEatenFunction</a> for
+				details</p>
+				<p><em>ExpAdd</em> occurs when player gains some experience. See <a href="../interfaces/callback.expaddfunction.html">ExpAddFunction</a>
+				for details</p>
+				<p><em>ExpLevelAdd</em> occurs when player gains some experience levels. See
+				<a href="../interfaces/callback.expleveladdfunction.html">ExpLevelAddFunction</a> for details</p>
+				<p><em>NativeCommand</em> occurs when player enters some command. See
+				<a href="../interfaces/callback.nativecommandfunction.html">NativeCommandFunction</a> for details</p>
+				<p><em>PlayerAttack</em> occurs when player attacks some entity. See
+				<a href="../interfaces/callback.playerattackfunction.html">PlayerAttackFunction</a> for details</p>
+				<p><em>EntityInteract</em> occurs when player longclick some entity (interacts with
+				it). See <a href="../interfaces/callback.entityinteractfunction.html">EntityInteractFunction</a> for details</p>
+				<p><em>ItemUseNoTarget</em> occurs when an item is used in the air. See
+				<a href="../interfaces/callback.itemusenotargetfunction.html">ItemUseNoTargetFunction</a> for details</p>
+				<p><em>ItemUsingReleased</em> occurs when player doesn&#39;t complete using item that has
+					maximum use time set with <a href="../modules/item.html#setmaxuseduration">Item.setMaxUseDuration</a> function. See
+				<a href="../interfaces/callback.itemusingreleasedfunction.html">ItemUsingReleasedFunction</a> for details</p>
+				<p><em>ItemUsingComplete</em> when player completes using item that has maximum use
+					time set with <a href="../modules/item.html#setmaxuseduration">Item.setMaxUseDuration</a> function. See
+				<a href="../interfaces/callback.itemusingcompletefunction.html">ItemUsingCompleteFunction</a> for details</p>
+				<a href="#entities-and-environment-callbacks" id="entities-and-environment-callbacks" style="color: inherit; text-decoration: none;">
+					<h2>Entities and environment callbacks</h2>
+				</a>
+				<p><em>Explosion</em> occurs when something is exploded in the world. See
+				<a href="../interfaces/callback.explosionfunction.html">ExplosionFunction</a> for details</p>
+				<p><em>EntityAdded</em> occurs when an entity is added in the world. See
+				<a href="../interfaces/callback.entityaddedfunction.html">EntityAddedFunction</a> for details</p>
+				<p><em>EntityRemoved</em> occurs when an entity is removed from the world. See
+				<a href="../interfaces/callback.entityremovedfunction.html">EntityRemovedFunction</a> for details</p>
+				<p><em>EntityDeath</em> occurs when an entity dies. See <a href="../interfaces/callback.entitydeathfunction.html">EntityDeathFunction</a> for
+				details</p>
+				<p><em>EntityHurt</em> occurs when an entity is hurt. See <a href="../interfaces/callback.entityhurtfunction.html">EntityHurtFunction</a> for
+				details</p>
+				<p><em>ProjectileHit</em> occurs when a projectile entity hits entity or block. See
+				<a href="../interfaces/callback.projectilehitfunction.html">ProjectileHitFunction</a> for details</p>
+				<a href="#items-and-blocks-callbacks" id="items-and-blocks-callbacks" style="color: inherit; text-decoration: none;">
+					<h2>Items and blocks callbacks</h2>
+				</a>
+				<p><em>RedstoneSignal</em> occurs when redstone signal changes on the specified
+					coordinates. To register block as redstone consumer, use
+					<a href="../modules/block.html#setredstonetile">Block.setRedstoneTile</a> function. See <a href="../interfaces/callback.redstonesignalfunction.html">RedstoneSignalFunction</a> for
+				details</p>
+				<p><em>PopBlockResources</em> occurs when block is destroyed somehow (not by player).
+				See <a href="../interfaces/callback.popblockresourcesfunction.html">PopBlockResourcesFunction</a> for details</p>
+				<p><em>CustomBlockTessellation</em> occurs when custom block rendering needs to be
+				performed. See <a href="../interfaces/callback.customblocktessellationfunction.html">CustomBlockTessellationFunction</a> for details</p>
+				<p><em>ItemIconOverride</em> occurs when displaying item somewhere to override item&#39;s
+					icon. You can use it to change item&#39;s icon depending on some item state. See
+				<a href="../interfaces/callback.itemiconoverridefunction.html">ItemIconOverrideFunction</a> for details</p>
+				<p><em>ItemNameOverride</em> occurs when displaying item name to override it. You can
+					use it to display item charge, status, etc. See <a href="../interfaces/callback.itemnameoverridefunction.html">ItemNameOverrideFunction</a>
+				for details</p>
+				<p><em>ItemDispensed</em> occurs when an item is dispensed using dispenser. See
+				[ItemDispensedFunction]] for details</p>
+				<a href="#generation-callbacks" id="generation-callbacks" style="color: inherit; text-decoration: none;">
+					<h2>Generation callbacks</h2>
+				</a>
+				<p><em>GenerateChunk</em> occurs when generating chunk in overworld. Should be
+				used for all generation process. See <a href="../interfaces/callback.generatechunkfunction.html">GenerateChunkFunction</a> for details</p>
+				<p><em>GenerateChunkUnderground</em> occurs when generating chunk&#39;s underground in
+					overworld. Can be used for all underground generation process (though it is
+					OK to use &quot;GenerateChunk&quot; for it as well). See <a href="../interfaces/callback.generatechunkfunction.html">GenerateChunkFunction</a> for
+				details</p>
+				<p><em>GenerateNetherChunk</em> occurs when generating chunk in neather world.
+				See <a href="../interfaces/callback.generatechunkfunction.html">GenerateChunkFunction</a> for details</p>
+				<p><em>GenerateEndChunk</em> occurs when generating chunk in end world. See
+				<a href="../interfaces/callback.generatechunkfunction.html">GenerateChunkFunction</a> for details</p>
+				<p><em>GenerateChunkUniversal</em> occurs when any chunk is generated. See
+				<a href="../interfaces/callback.generatechunkfunction.html">GenerateChunkFunction</a> for details</p>
+				<p><em>GenerateBiomeMap</em> occurs after generating vanilla biome map so that we can modify it before the covers generation. See <a href="biomes.html">Biomes</a> for the
+				biomes generation information. See <a href="../interfaces/callback.generatechunkfunction.html">GenerateChunkFunction</a> for details</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label pp-nav pp-group">
+						<span>Guides</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="config.html">Mod <wbr>Configuration <wbr>Files</a>
+					</li>
+					<li class="current pp-nav pp-page">
+						<a href="callbacks.html">Callbacks</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="abilities.html">Abilities</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="attributes.html">Attributes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="materials.html">Materials and <wbr>Shaders</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="biomes.html">Biomes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="dimensions.html">Dimensions</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Additional <wbr>Information</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="contributing.html">Contributing</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Development API</span>
+					</li>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/addonentityregistry.html">Addon<wbr>Entity<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/animation.html">Animation</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/armor.html">Armor</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/block.html">Block</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/blockrenderer.html">Block<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/callback.html">Callback</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/commands.html">Commands</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/debug.html">Debug</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/dimensions.html">Dimensions</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/entity.html">Entity</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/entityai.html">EntityAI</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/filetools.html">File<wbr>Tools</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/game.html">Game</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/gameobjectregistry.html">Game<wbr>Object<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/generationutils.html">Generation<wbr>Utils</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/icrender.html">ICRender</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/iddata.html">IDData</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/idregistry.html">IDRegistry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/item.html">Item</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/itemmodel.html">Item<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/liquidregistry.html">Liquid<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/logger.html">Logger</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/mobregistry.html">Mob<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/mobspawnregistry.html">Mob<wbr>Spawn<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/modapi.html">ModAPI</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/modpack.html">Mod<wbr>Pack</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/nbt.html">NBT</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/native.html">Native</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/network.html">Network</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/particles.html">Particles</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/player.html">Player</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/recipes.html">Recipes</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/saver.html">Saver</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/threading.html">Threading</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/tileentity.html">Tile<wbr>Entity</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/toolapi.html">ToolAPI</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/translation.html">Translation</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/ui.html">UI</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/updatable.html">Updatable</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/world.html">World</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.json"><' + '/script>');</script>
+</body>
+</html>
