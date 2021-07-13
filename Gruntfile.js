@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         typedoc: {
             build: {
                 options: {
-                    out: 'out',
+                    out: 'out1',
                     includeDeclarations: true,
                     excludeExternals: true,
                     target: 'ES6',

@@ -1,24 +1,20 @@
 /**
- * Module used to create and manipulate blocks. The difference between terms 
- * "block" and "tile" is in its usage: blocks are used in the inventory, 
- * tiles are placed in the world and have different ids for some vanilla blocks. 
- * Use [[Block.convertBlockToItemId]] and [[Block.convertItemToBlockId]]
+ * 该模块适用于创建和修改方块. 
+ * 术语 "block" 和 "tile" 存在存在着差异,这是由于他们的用法不同: 
+ * "block" 指的是存在于背包里的方块,而 "tile" 指的是放置世界上的方块,对部分原版方块来说两者的ID不同. 
+ * 请使用 [[Block.convertBlockToItemId]] 和 [[Block.convertItemToBlockId]]来进行id转换.
  */
 declare namespace Block {
 	/**
-	 * @param id string id of the block
-	 * @returns block numeric id by its string id or just returns its numeric id 
-	 * if input was a numeric id
+	 * @param id 方块的字符串ID 
+	 * @returns 通过方块的字符串ID来返回其对应的数字ID,如输入是数字ID,则返回其仍是数字ID.
 	 */
 	function getNumericId(id: string | number): number;
 
 	/**
-	 * Creates new block using specified params
-	 * @param nameID string id of the block. You should register it via 
-	 * [[IDRegistry.genBlockID]] call first
-	 * @param defineData array containing all variations of the block. Each 
-	 * variation corresponds to block data value, data values are assigned 
-	 * according to variations order
+	 * 使用指定数据创建新方块
+	 * @param nameID 方块的字符串ID, 您应该先使用 [[IDRegistry.genBlockID]] 注册.
+	 * @param defineData 方块所包含全部变种的数组,每个变种对应着方块的特殊值,按照数组顺序分配特殊值.
 	 * @param blockType [[SpecialType]] object, either java-object returned by
 	 * [[Block.createSpecialType]] or js-object with the required properties, 
 	 * you can also pass special type name, if the type was previously 
@@ -27,12 +23,11 @@ declare namespace Block {
 	function createBlock(nameID: string, defineData: BlockVariation[], blockType?: SpecialType | string): void;
 
 	/**
-	 * Creates new block using specified params, creating four variations for 
+	 * 使用指定数据创建新方块, creating four variations for 
 	 * each of the specified variations to be able to place it facing flayer 
 	 * with the front side and defines the appropriate behavior. Useful for 
 	 * different machines and mechanisms
-	 * @param nameID string id of the block. You should register it via 
-	 * [[IDRegistry.genBlockID]] call first
+	 * @param nameID 方块的字符串ID, 您应该先使用 [[IDRegistry.genBlockID]] 注册.
 	 * @param defineData array containing all variations of the block. Each 
 	 * variation corresponds to four block data values, data values are assigned 
 	 * according to variations order
@@ -44,7 +39,7 @@ declare namespace Block {
 	function createBlockWithRotation(nameID: string, defineData: BlockVariation[], blockType?: SpecialType | string): void;
 
 	/**
-	 * @param id numeric block id
+	 * @param id 数字方块ID
 	 * @returns true, if the specified block id is a vanilla block
 	 */
 	function isNativeTile(id: number): boolean;
@@ -52,7 +47,7 @@ declare namespace Block {
 	/**
 	 * Converts tile id to the block id
 	 * @param id numeric tile id
-	 * @returns numeric block id corresponding to the given tile id
+	 * @returns 数字方块ID corresponding to the given tile id
 	 */
 	function convertBlockToItemId(id: number): number;
 
@@ -118,61 +113,61 @@ declare namespace Block {
 
 	/**
 	 * Sets destroy time for the block with specified id
-	 * @param nameID string or numeric block id
+	 * @param nameID string or 数字方块ID
 	 * @param time destroy time for the block, in ticks
 	 */
 	function setDestroyTime(nameID: string | number, time: number): void;
 
 	/**
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @returns true, if block is solid, false otherwise
 	 */
 	function isSolid(numericID: number): boolean;
 
 	/**
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @returns destroy time of the block, in ticks
 	 */
 	function getDestroyTime(numericID: number): number;
 
 	/**
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @returns explosion resistance of the block
 	 */
 	function getExplosionResistance(numericID: number): number;
 
 	/**
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @returns friction of the block
 	 */
 	function getFriction(numericID: number): number;
 
 	/**
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @returns translucency of the block
 	 */
 	function getTranslucency(numericID: number): number;
 
 	/**
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @returns light level, emitted by block, from 0 to 15
 	 */
 	function getLightLevel(numericID: number): number;
 
 	/**
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @returns light opacity of the block, from 0 to 15
 	 */
 	function getLightOpacity(numericID: number): number;
 
 	/**
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @returns render layer of the block
 	 */
 	function getRenderLayer(numericID: number): number;
 
 	/**
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @returns render type of the block
 	 */
 	function getRenderType(numericID: number): number;
@@ -180,7 +175,7 @@ declare namespace Block {
 	/**
 	 * Temporarily sets destroy time for block, saving the old value for the 
 	 * further usage
-	 * @param numericID numeric block id
+	 * @param numericID 数字方块ID
 	 * @param time new destroy time in ticks
 	 */
 	function setTempDestroyTime(numericID: number, time: number): void;
@@ -260,7 +255,7 @@ declare namespace Block {
 	function setPrototype(nameID: string | number, Prototype: any): number;
 
 	/**
-	 * @param id numeric block id
+	 * @param id 数字方块ID
 	 * @returns the color specified block is displayed on the vanilla maps
 	 */
 	function getMapColor(id: number): number;

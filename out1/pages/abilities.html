@@ -1,0 +1,367 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Abilities | Core Engine API</title>
+	<meta name="description" content="Documentation for Core Engine API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Core Engine API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="config.html">Guides</a>
+				</li>
+				<li>
+					<a href="abilities.html">Abilities</a>
+				</li>
+			</ul>
+			<h1>Abilities</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p>Abilities is a mechanism that allows to set some flags (allow/disallow actions) or values (fly speed, walk speed) for the player. Inner Core provides an interface to the underlying Abilities implementation. Not all of the abilities are well tested, some may not work at all. </p>
+				<p>Abilities may be of two types: <em>boolean</em> and <em>float</em>. The appropriate setter is invoked automatically when you call
+					<a href="../modules/player.html#setability">Player.setAbility</a> function. To keep types consistent, two functions, <a href="../modules/player.html#getfloatability">Player.getFloatAbility</a> and
+				<a href="../modules/player.html#getbooleanability">Player.getBooleanAbility</a> are used to retrieve value in the required form.</p>
+				<p>You can find the list of all the abilities with their default values available in Minecraft 1.11.4 below.
+				If you find out more information about some of the abilities, feel free to contribute (See <a href="contributing.html">Contributing</a>). </p>
+				<a href="#abilities-list" id="abilities-list" style="color: inherit; text-decoration: none;">
+					<h2>Abilities List</h2>
+				</a>
+				<a href="#attack_mobs" id="attack_mobs" style="color: inherit; text-decoration: none;">
+					<h3>ATTACK_MOBS</h3>
+				</a>
+				<p>Whether the player can attack mobs</p>
+				<pre><code class="language-js">Native.PlayerAbility.ATTACK_MOBS = <span class="hljs-literal">true</span></code></pre>
+				<a href="#attack_players" id="attack_players" style="color: inherit; text-decoration: none;">
+					<h3>ATTACK_PLAYERS</h3>
+				</a>
+				<p>Whether the player can attack other players</p>
+				<pre><code class="language-js">Native.PlayerAbility.ATTACK_PLAYERS = <span class="hljs-literal">true</span></code></pre>
+				<a href="#build" id="build" style="color: inherit; text-decoration: none;">
+					<h3>BUILD</h3>
+				</a>
+				<p>Whether the player can place blocks</p>
+				<pre><code class="language-js">Native.PlayerAbility.BUILD = <span class="hljs-literal">true</span></code></pre>
+				<a href="#doors_and_switches" id="doors_and_switches" style="color: inherit; text-decoration: none;">
+					<h3>DOORS_AND_SWITCHES</h3>
+				</a>
+				<p>Whether the player can operate doors, levers, etc.</p>
+				<pre><code class="language-js">Native.PlayerAbility.DOORS_AND_SWITCHES = <span class="hljs-literal">true</span></code></pre>
+				<a href="#flying" id="flying" style="color: inherit; text-decoration: none;">
+					<h3>FLYING</h3>
+				</a>
+				<p>Specifies whether the player is flying at the moment or not</p>
+				<pre><code class="language-js">Native.PlayerAbility.FLYING = <span class="hljs-literal">false</span></code></pre>
+				<a href="#flyspeed" id="flyspeed" style="color: inherit; text-decoration: none;">
+					<h3>FLYSPEED</h3>
+				</a>
+				<p>The speed at which the player flies in Creative</p>
+				<pre><code class="language-js">Native.PlayerAbility.FLYSPEED = <span class="hljs-number">0.1</span></code></pre>
+				<a href="#instabuild" id="instabuild" style="color: inherit; text-decoration: none;">
+					<h3>INSTABUILD</h3>
+				</a>
+				<p>Whether the player can break blocks instantly. Normally only true in Creative.</p>
+				<pre><code class="language-js">Native.PlayerAbility.INSTABUILD = <span class="hljs-literal">false</span></code></pre>
+				<a href="#invulnerable" id="invulnerable" style="color: inherit; text-decoration: none;">
+					<h3>INVULNERABLE</h3>
+				</a>
+				<p>True if the player is immune to all damage and harmful effects except for void damage. (damage caused by the /kill command is void damage)</p>
+				<pre><code class="language-js">Native.PlayerAbility.INVULNERABLE = <span class="hljs-literal">false</span></code></pre>
+				<a href="#lightning" id="lightning" style="color: inherit; text-decoration: none;">
+					<h3>LIGHTNING</h3>
+				</a>
+				<p>Whether lightning appears in thunderstorms</p>
+				<pre><code class="language-js">Native.PlayerAbility.LIGHTNING = <span class="hljs-literal">false</span></code></pre>
+				<a href="#mayfly" id="mayfly" style="color: inherit; text-decoration: none;">
+					<h3>MAYFLY</h3>
+				</a>
+				<p>Specifies whether the player has the ability to fly or not</p>
+				<pre><code class="language-js">Native.PlayerAbility.MAYFLY = <span class="hljs-literal">false</span></code></pre>
+				<a href="#mine" id="mine" style="color: inherit; text-decoration: none;">
+					<h3>MINE</h3>
+				</a>
+				<p>Whether the player can destroy blocks</p>
+				<pre><code class="language-js">Native.PlayerAbility.MINE = <span class="hljs-literal">true</span></code></pre>
+				<a href="#muted" id="muted" style="color: inherit; text-decoration: none;">
+					<h3>MUTED</h3>
+				</a>
+				<p>If true, disables chat so that you cannot send messages</p>
+				<pre><code class="language-js">Native.PlayerAbility.MUTED = <span class="hljs-literal">false</span></code></pre>
+				<a href="#noclip" id="noclip" style="color: inherit; text-decoration: none;">
+					<h3>NOCLIP</h3>
+				</a>
+				<p>If true, player can pass through the walls</p>
+				<pre><code class="language-js">Native.PlayerAbility.NOCLIP = <span class="hljs-literal">false</span></code></pre>
+				<a href="#open_containers" id="open_containers" style="color: inherit; text-decoration: none;">
+					<h3>OPEN_CONTAINERS</h3>
+				</a>
+				<p>Whether the player can interact with chests and other containers</p>
+				<pre><code class="language-js">Native.PlayerAbility.OPEN_CONTAINERS = <span class="hljs-literal">true</span></code></pre>
+				<a href="#operator_commands" id="operator_commands" style="color: inherit; text-decoration: none;">
+					<h3>OPERATOR_COMMANDS</h3>
+				</a>
+				<p>Whether the player can use operator commands</p>
+				<pre><code class="language-js">Native.PlayerAbility.OPERATOR_COMMANDS = <span class="hljs-literal">true</span></code></pre>
+				<a href="#teleport" id="teleport" style="color: inherit; text-decoration: none;">
+					<h3>TELEPORT</h3>
+				</a>
+				<p>Whether the player can use teleportation commands</p>
+				<pre><code class="language-js">Native.PlayerAbility.TELEPORT = <span class="hljs-literal">true</span></code></pre>
+				<a href="#walkspeed" id="walkspeed" style="color: inherit; text-decoration: none;">
+					<h3>WALKSPEED</h3>
+				</a>
+				<p>The speed at which the player walks</p>
+				<pre><code class="language-js">Native.PlayerAbility.WALKSPEED = <span class="hljs-number">0.05</span></code></pre>
+				<a href="#worldbuilder" id="worldbuilder" style="color: inherit; text-decoration: none;">
+					<h3>WORLDBUILDER</h3>
+				</a>
+				<p>True, if player can use worldbuilder command (education edition only)</p>
+				<pre><code class="language-js">Native.PlayerAbility.WORLDBUILDER = <span class="hljs-literal">false</span></code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label pp-nav pp-group">
+						<span>Guides</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="config.html">Mod <wbr>Configuration <wbr>Files</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="callbacks.html">Callbacks</a>
+					</li>
+					<li class="current pp-nav pp-page">
+						<a href="abilities.html">Abilities</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="attributes.html">Attributes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="materials.html">Materials and <wbr>Shaders</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="biomes.html">Biomes</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="dimensions.html">Dimensions</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Additional <wbr>Information</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="contributing.html">Contributing</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Development API</span>
+					</li>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/addonentityregistry.html">Addon<wbr>Entity<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/animation.html">Animation</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/armor.html">Armor</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/block.html">Block</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/blockrenderer.html">Block<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/callback.html">Callback</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/commands.html">Commands</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/debug.html">Debug</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/dimensions.html">Dimensions</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/entity.html">Entity</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/entityai.html">EntityAI</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/filetools.html">File<wbr>Tools</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/game.html">Game</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/gameobjectregistry.html">Game<wbr>Object<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/generationutils.html">Generation<wbr>Utils</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/icrender.html">ICRender</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/iddata.html">IDData</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/idregistry.html">IDRegistry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/item.html">Item</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/itemmodel.html">Item<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/liquidregistry.html">Liquid<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/logger.html">Logger</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/mobregistry.html">Mob<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/mobspawnregistry.html">Mob<wbr>Spawn<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/modapi.html">ModAPI</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/modpack.html">Mod<wbr>Pack</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/nbt.html">NBT</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/native.html">Native</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/network.html">Network</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/particles.html">Particles</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/player.html">Player</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/recipes.html">Recipes</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/saver.html">Saver</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/threading.html">Threading</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/tileentity.html">Tile<wbr>Entity</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/toolapi.html">ToolAPI</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/translation.html">Translation</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/ui.html">UI</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/updatable.html">Updatable</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/world.html">World</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.json"><' + '/script>');</script>
+</body>
+</html>
